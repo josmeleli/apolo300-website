@@ -51,7 +51,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative h-[50vh] sm:h-[55vh] md:h-[60vh] lg:h-[65vh] overflow-hidden">
+    <div className="relative h-[45vh] sm:h-[50vh] md:h-[55vh] lg:h-[60vh] overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={slide.id}
