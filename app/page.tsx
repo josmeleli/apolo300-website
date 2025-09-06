@@ -1,10 +1,14 @@
 "use client"
 
+import { useState } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Services from './components/Services'
+import WhatsAppChat from './components/WhatsAppChat'
 
 export default function Home() {
+  const [isChatOpen, setIsChatOpen] = useState(false)
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -16,7 +20,7 @@ export default function Home() {
       {/* WhatsApp Float Button */}
       <div className="fixed bottom-6 right-6 z-50">
         <button
-          onClick={() => window.open('https://wa.me/51959924343', '_blank')}
+          onClick={() => setIsChatOpen(!isChatOpen)}
           className="bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl flex items-center justify-center"
         >
           <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 448 512">
@@ -24,6 +28,12 @@ export default function Home() {
           </svg>
         </button>
       </div>
+
+      {/* WhatsApp Chat Widget */}
+      <WhatsAppChat 
+        isOpen={isChatOpen} 
+        onClose={() => setIsChatOpen(false)} 
+      />
     </div>
   );
 }
