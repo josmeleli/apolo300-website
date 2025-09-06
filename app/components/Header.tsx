@@ -5,6 +5,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState('INICIO');
 
   const navigation = [
     { name: 'INICIO', href: '#' },
@@ -15,6 +16,11 @@ const Header = () => {
     { name: 'BLOG', href: '#' },
     { name: 'CONTACTO', href: '#' },
   ];
+
+  const handleLinkClick = (linkName: string) => {
+    setActiveLink(linkName);
+    setIsMenuOpen(false); // Close mobile menu when link is clicked
+  };
 
   return (
     <header className="fixed w-full top-0 z-50 shadow-lg">
@@ -66,12 +72,17 @@ const Header = () => {
       <div className="bg-blue-950">
         <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8 py-5">
+          <nav className="hidden md:flex">
             {navigation.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-white hover:text-yellow-400 transition-colors font-medium text-sm"
+                onClick={() => handleLinkClick(item.name)}
+                className={`text-white hover:text-yellow-400 transition-colors font-bold text-base px-4 py-5 border-b-2 ${
+                  activeLink === item.name 
+                    ? 'border-red-500' 
+                    : 'border-transparent hover:border-red-300'
+                }`}
               >
                 {item.name}
                 {item.hasDropdown && <span className="ml-1">▼</span>}
@@ -87,7 +98,12 @@ const Header = () => {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="text-white hover:text-yellow-400 block px-3 py-3 text-base font-medium"
+                    onClick={() => handleLinkClick(item.name)}
+                    className={`text-white hover:text-yellow-400 block px-3 py-3 text-lg font-bold border-l-4 ${
+                      activeLink === item.name 
+                        ? 'border-red-500 bg-blue-800' 
+                        : 'border-transparent'
+                    }`}
                   >
                     {item.name}
                   </a>
