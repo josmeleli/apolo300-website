@@ -14,7 +14,7 @@ export default function WhatsAppChat({ isOpen, onClose }: WhatsAppChatProps) {
   const handleSendMessage = () => {
     if (message.trim()) {
       const encodedMessage = encodeURIComponent(message)
-      window.open(`https://wa.me/51950378235?text=${encodedMessage}`, '_blank')
+      window.open(`https://web.whatsapp.com/send?phone=51959924343&text=${encodedMessage}`, '_blank')
       setMessage('')
       onClose()
     }
@@ -115,7 +115,7 @@ export default function WhatsAppChat({ isOpen, onClose }: WhatsAppChatProps) {
         
         {/* Click para conversar button */}
         <button
-          onClick={() => window.open('https://wa.me/51959924343', '_blank')}
+          onClick={() => window.open('https://web.whatsapp.com/send?phone=51959924343', '_blank')}
           className="w-full mt-2 bg-gray-100 hover:bg-gray-200 text-gray-700 py-2 px-4 rounded-lg text-sm font-medium transition-colors flex items-center justify-center space-x-2"
         >
           <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 448 512">
