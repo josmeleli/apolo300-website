@@ -78,7 +78,7 @@ const Header = () => {
                 key={item.name}
                 href={item.href}
                 onClick={() => handleLinkClick(item.name)}
-                className={`text-white hover:text-yellow-400 transition-colors font-bold text-base px-4 py-5 border-b-2 ${
+                className={`text-white hover:text-yellow-400 transition-colors font-bold text-base px-6 py-3 border-b-2 ${
                   activeLink === item.name 
                     ? 'border-red-500' 
                     : 'border-transparent hover:border-red-300'
