@@ -9,31 +9,38 @@ const Hero = () => {
   const slides = [
     {
       id: 1,
-      title: "SERVICIO ESPECIAL - RESGUARDO VIP",
-      description: "Nuestro personal de resguardos está conformado por profesionales en el campo de la seguridad, altamente capacitados y en constante actualización y entrenamiento.",
-      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1926&q=80",
-      buttonText: "INGRESAR"
+      title: "CÁMARAS DE SEGURIDAD",
+      description: "Sistemas de videovigilancia de alta calidad para proteger tu hogar o negocio. Instalación profesional con tecnología de punta y monitoreo 24/7.",
+      image: "/images/instalación-de-cámaras-de-seguridad.webp",
+      buttonText: "SOLICITAR COTIZACIÓN"
     },
     {
       id: 2,
-      title: "SERVICIO ESPECIAL - RESGUARDO VIP",
-      description: "Nuestro personal de resguardos está conformado por profesionales en el campo de la seguridad, altamente capacitados y en constante actualización y entrenamiento.",
-      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1926&q=80",
-      buttonText: "INGRESAR"
+      title: "SISTEMAS DE ALARMAS",
+      description: "Alarmas contra intrusos con sensores de movimiento, contactos magnéticos y sistemas de respuesta inmediata para máxima seguridad.",
+      image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      buttonText: "SOLICITAR COTIZACIÓN"
     },
     {
       id: 3,
-      title: "SERVICIO ESPECIAL - RESGUARDO VIP",
-      description: "Nuestro personal de resguardos está conformado por profesionales en el campo de la seguridad, altamente capacitados y en constante actualización y entrenamiento.",
-      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1926&q=80",
-      buttonText: "INGRESAR"
+      title: "VENTA Y MANTENIMIENTO DE EQ. DE CÓMPUTO",
+      description: "Computadoras, laptops, impresoras y equipos informáticos. Servicio técnico especializado y mantenimiento preventivo y correctivo.",
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      buttonText: "SOLICITAR COTIZACIÓN"
     },
     {
       id: 4,
-      title: "SERVICIO ESPECIAL - RESGUARDO VIP",
-      description: "Nuestro personal de resguardos está conformado por profesionales en el campo de la seguridad, altamente capacitados y en constante actualización y entrenamiento.",
-      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1926&q=80",
-      buttonText: "INGRESAR"
+      title: "INTERNET HOGAR - CABLE SATELITAL",
+      description: "Servicio de internet de alta velocidad y televisión por cable satelital. Instalación profesional y soporte técnico especializado.",
+      image: "https://images.unsplash.com/photo-1606868306217-dbf5046868d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      buttonText: "SOLICITAR COTIZACIÓN"
+    },
+    {
+      id: 5,
+      title: "INTERCOMUNICADORES", 
+      description: "Sistemas de intercomunicación para edificios, casas y oficinas. Video porteros y sistemas de control de acceso con tecnología avanzada.",
+      image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      buttonText: "SOLICITAR COTIZACIÓN"
     }
   ];
 
@@ -61,20 +68,33 @@ const Hero = () => {
         >
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url(${slide.image})` }}
+            style={{ 
+              backgroundImage: `url(${slide.image})`,
+              filter: 'blur(2px)'
+            }}
           >
-            <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           </div>
           
+          {/* CSS Overlay Negro */}
+          <div 
+            className="absolute inset-0"
+            style={{
+              background: 'rgba(0, 0, 0, 0.4)',
+              zIndex: 5
+            }}
+          ></div>
+          
           <div className="relative z-10 flex items-center justify-center h-full">
-            <div className="text-center text-white max-w-4xl px-4">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 text-yellow-400">
+            <div 
+              className="text-center text-white max-w-4xl px-6 py-8 rounded-lg"
+            >
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 text-yellow-400 drop-shadow-2xl">
                 {slide.title}
               </h1>
-              <p className="text-lg md:text-xl mb-8 leading-relaxed">
+              <p className="text-lg md:text-xl mb-8 leading-relaxed drop-shadow-lg">
                 {slide.description}
               </p>
-              <button className="bg-yellow-400 text-black px-8 py-3 rounded font-bold text-lg hover:bg-yellow-300 transition-colors">
+              <button className="bg-yellow-400 text-black px-8 py-3 rounded font-bold text-lg hover:bg-yellow-300 transition-colors drop-shadow-lg">
                 {slide.buttonText}
               </button>
             </div>
