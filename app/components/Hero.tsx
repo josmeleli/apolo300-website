@@ -59,13 +59,21 @@ const Hero = () => {
 
   return (
     <div className="relative h-[45vh] sm:h-[50vh] md:h-[55vh] lg:h-[60vh] overflow-hidden">
-      {slides.map((slide, index) => (
-        <div
-          key={slide.id}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
-            index === currentSlide ? 'opacity-100' : 'opacity-0'
-          }`}
-        >
+      {slides.map((slide, index) => {
+        let slideClass = '';
+        if (index === currentSlide) {
+          slideClass = 'translate-x-0'; // Slide actual visible
+        } else if (index > currentSlide) {
+          slideClass = 'translate-x-full'; // Slides futuros a la derecha
+        } else {
+          slideClass = '-translate-x-full'; // Slides pasados a la izquierda
+        }
+        
+        return (
+          <div
+            key={slide.id}
+            className={`absolute inset-0 transition-transform duration-500 ease-in-out ${slideClass}`}
+          >
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{ 
@@ -99,8 +107,9 @@ const Hero = () => {
               </button>
             </div>
           </div>
-        </div>
-      ))}
+          </div>
+        );
+      })}
 
       {/* Navigation Arrows */}
       <button
