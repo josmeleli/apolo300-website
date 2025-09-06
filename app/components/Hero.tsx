@@ -18,7 +18,7 @@ const Hero = () => {
       id: 2,
       title: "SISTEMAS DE ALARMAS",
       description: "Alarmas contra intrusos con sensores de movimiento, contactos magnéticos y sistemas de respuesta inmediata para máxima seguridad.",
-      image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
       buttonText: "SOLICITAR COTIZACIÓN"
     },
     {
