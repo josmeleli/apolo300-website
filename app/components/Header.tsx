@@ -30,13 +30,11 @@ const Header = () => {
           <div className="flex justify-between items-center py-3 sm:py-4 md:py-6">
             {/* Logo */}
             <div className="flex items-center">
-              <div className="bg-blue-900 p-2 sm:p-3 rounded">
-                <div className="text-white font-bold text-lg sm:text-xl">TENSE</div>
-              </div>
-              <div className="ml-2 sm:ml-4 text-blue-900">
-                <div className="text-xs sm:text-sm md:text-base font-medium">¡Nuestro compromiso,</div>
-                <div className="text-xs sm:text-sm md:text-base font-medium">tu seguridad!</div>
-              </div>
+              <img 
+                src="/images/apolo300-corporación.webp" 
+                alt="Apolo Security" 
+                className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto"
+              />
             </div>
 
             {/* Social Media Icons */}
