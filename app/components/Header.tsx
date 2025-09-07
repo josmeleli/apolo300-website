@@ -8,6 +8,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState('INICIO');
+  const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
   const pathname = usePathname();
 
   const navigation = [
@@ -18,6 +19,14 @@ const Header = () => {
     { name: 'ÚNETE A NOSOTROS', href: '/unete-a-nosotros' },
     { name: 'BLOG', href: '/blog' },
     { name: 'CONTACTO', href: '/contacto' },
+  ];
+
+  const servicesDropdown = [
+    { name: 'Seguridad Privada', href: '/servicios/seguridad-privada' },
+    { name: 'Seguridad para Eventos', href: '/servicios/seguridad-eventos' },
+    { name: 'Seguridad Corporativa', href: '/servicios/seguridad-corporativa' },
+    { name: 'Seguridad de Resguardo', href: '/servicios/seguridad-resguardo' },
+    { name: 'Prevención de Pérdidas', href: '/servicios/prevencion-perdidas' },
   ];
 
   // Update active link based on current pathname
@@ -78,21 +87,42 @@ const Header = () => {
       <div className="bg-blue-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex">
+          <nav className="hidden lg:flex relative">
             {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                onClick={() => setIsMenuOpen(false)}
-                className={`text-white hover:text-yellow-400 transition-colors font-bold text-sm xl:text-base px-4 xl:px-6 py-3 border-b-2 whitespace-nowrap ${
-                  activeLink === item.name 
-                    ? 'border-red-500' 
-                    : 'border-transparent hover:border-red-300'
-                }`}
+              <div 
+                key={item.name} 
+                className="relative"
+                onMouseEnter={() => item.hasDropdown && setIsServicesDropdownOpen(true)}
+                onMouseLeave={() => item.hasDropdown && setIsServicesDropdownOpen(false)}
               >
-                {item.name}
-                {item.hasDropdown && <span className="ml-1">▼</span>}
-              </Link>
+                <Link
+                  href={item.href}
+                  onClick={() => setIsMenuOpen(false)}
+                  className={`text-white hover:text-yellow-400 transition-colors font-bold text-sm xl:text-base px-4 xl:px-6 py-3 border-b-2 whitespace-nowrap flex items-center ${
+                    activeLink === item.name 
+                      ? 'border-red-500' 
+                      : 'border-transparent hover:border-red-300'
+                  }`}
+                >
+                  {item.name}
+                  {item.hasDropdown && <span className="ml-1">▼</span>}
+                </Link>
+                
+                {/* Dropdown Menu */}
+                {item.hasDropdown && isServicesDropdownOpen && (
+                  <div className="absolute top-full left-0 bg-white shadow-xl rounded-lg py-2 min-w-64 z-50">
+                    {servicesDropdown.map((service) => (
+                      <Link
+                        key={service.name}
+                        href={service.href}
+                        className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors border-b border-gray-100 last:border-b-0"
+                      >
+                        {service.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
             ))}
           </nav>
 
