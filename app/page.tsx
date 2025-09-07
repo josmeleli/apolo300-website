@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Services from './components/Services'
+import Footer from './components/Footer'
 import WhatsAppChat from './components/WhatsAppChat'
 
 export default function Home() {
@@ -16,6 +17,8 @@ export default function Home() {
         <Hero />
         <Services />
       </main>
+      
+      <Footer />
       
       {/* WhatsApp Float Button */}
       <div className="fixed bottom-6 right-6 z-50">
