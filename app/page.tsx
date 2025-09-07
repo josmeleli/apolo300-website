@@ -7,7 +7,7 @@ import PageLayout from './components/PageLayout'
 export default function Home() {
   return (
     <PageLayout>
-      <main className="pt-24 sm:pt-28 md:pt-32">
+      <main>
         <Hero />
         <Services />
       </main>
