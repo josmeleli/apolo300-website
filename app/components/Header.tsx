@@ -31,11 +31,16 @@ const Header = () => {
 
   // Update active link based on current pathname
   useEffect(() => {
-    const currentNavItem = navigation.find(item => item.href === pathname);
-    if (currentNavItem) {
-      setActiveLink(currentNavItem.name);
-    } else if (pathname === '/') {
-      setActiveLink('INICIO');
+    // Check if we're on any services page (including sub-pages)
+    if (pathname.startsWith('/servicios')) {
+      setActiveLink('SERVICIOS');
+    } else {
+      const currentNavItem = navigation.find(item => item.href === pathname);
+      if (currentNavItem) {
+        setActiveLink(currentNavItem.name);
+      } else if (pathname === '/') {
+        setActiveLink('INICIO');
+      }
     }
   }, [pathname]);
 
