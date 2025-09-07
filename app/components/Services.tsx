@@ -2,21 +2,33 @@ const Services = () => {
   const services = [
     {
       id: 1,
-      title: "Servicio de Seguridad",
-      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      description: "Personal altamente capacitado para la protección de personas y bienes."
+      title: "Seguridad Privada",
+      image: "/images/servicio-de-seguridad-privada.webp",
+      description: "Servicios de seguridad personalizada para residencias, oficinas y propiedades privadas con personal capacitado."
     },
     {
       id: 2,
-      title: "Vigilancia Privada",
-      image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      description: "Servicios de vigilancia profesional para empresas y residencias."
+      title: "Seguridad para Eventos",
+      image: "/images/servicio-de-seguridad-para-eventos.webp",
+      description: "Protección especializada para eventos corporativos, sociales y masivos con control de acceso profesional."
     },
     {
       id: 3,
-      title: "Escoltas Personales",
-      image: "https://images.unsplash.com/photo-1591084728795-1149f32d9866?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      description: "Protección personal especializada para ejecutivos y personalidades."
+      title: "Seguridad Corporativa",
+      image: "/images/servicio-de-seguridad-corporativa.webp",
+      description: "Soluciones integrales de seguridad para empresas con vigilancia ejecutiva y protección de instalaciones."
+    },
+    {
+      id: 4,
+      title: "Seguridad de Resguardo",
+      image: "/images/servicio-de-seguridad-de-resguardo.webp",
+      description: "Protección especializada para bienes, valores y custodia de mercancías con máxima seguridad."
+    },
+    {
+      id: 5,
+      title: "Seguridad de Prevención de Pérdidas",
+      image: "/images/servicio-de-seguridad-de-prevención-de-perdidas.webp",
+      description: "Servicios especializados en prevención de robos y pérdidas en comercios con vigilancia discreta."
     }
   ];
 
@@ -29,7 +41,7 @@ const Services = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {services.map((service) => (
             <div
               key={service.id}

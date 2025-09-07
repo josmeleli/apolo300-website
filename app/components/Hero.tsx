@@ -9,37 +9,37 @@ const Hero = () => {
   const slides = [
     {
       id: 1,
-      title: "CÁMARAS DE SEGURIDAD",
-      description: "Sistemas de videovigilancia de alta calidad para proteger tu hogar o negocio. Instalación profesional con tecnología de punta y monitoreo 24/7.",
-      image: "/images/instalación-de-cámaras-de-seguridad.webp",
+      title: "SEGURIDAD PRIVADA",
+      description: "Servicios de seguridad personalizada para residencias, oficinas y propiedades privadas. Protección profesional 24/7 con personal capacitado y tecnología avanzada.",
+      image: "/images/servicio-de-seguridad-privada.webp",
       buttonText: "SOLICITAR COTIZACIÓN"
     },
     {
       id: 2,
-      title: "SISTEMAS DE ALARMAS",
-      description: "Alarmas contra intrusos con sensores de movimiento, contactos magnéticos y sistemas de respuesta inmediata para máxima seguridad.",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      title: "SEGURIDAD PARA EVENTOS",
+      description: "Protección especializada para eventos corporativos, sociales y masivos. Control de acceso, vigilancia perimetral y manejo de multitudes con personal experimentado.",
+      image: "/images/servicio-de-seguridad-para-eventos.webp",
       buttonText: "SOLICITAR COTIZACIÓN"
     },
     {
       id: 3,
-      title: "VENTA Y MANTENIMIENTO DE EQ. DE CÓMPUTO",
-      description: "Computadoras, laptops, impresoras y equipos informáticos. Servicio técnico especializado y mantenimiento preventivo y correctivo.",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      title: "SEGURIDAD CORPORATIVA",
+      description: "Soluciones integrales de seguridad para empresas y corporaciones. Vigilancia ejecutiva, protección de instalaciones y control de acceso empresarial.",
+      image: "/images/servicio-de-seguridad-corporativa.webp",
       buttonText: "SOLICITAR COTIZACIÓN"
     },
     {
       id: 4,
-      title: "INTERNET HOGAR - CABLE SATELITAL",
-      description: "Servicio de internet de alta velocidad y televisión por cable satelital. Instalación profesional y soporte técnico especializado.",
-      image: "https://images.unsplash.com/photo-1606868306217-dbf5046868d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      title: "SEGURIDAD DE RESGUARDO",
+      description: "Protección especializada para bienes y valores. Custodia de mercancías, transporte de valores y resguardo de activos importantes con máxima seguridad.",
+      image: "/images/servicio-de-seguridad-de-resguardo.webp",
       buttonText: "SOLICITAR COTIZACIÓN"
     },
     {
       id: 5,
-      title: "INTERCOMUNICADORES", 
-      description: "Sistemas de intercomunicación para edificios, casas y oficinas. Video porteros y sistemas de control de acceso con tecnología avanzada.",
-      image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      title: "SEGURIDAD DE PREVENCIÓN DE PÉRDIDAS", 
+      description: "Servicios especializados en prevención de robos y pérdidas en comercios y almacenes. Vigilancia discreta y estrategias de protección efectivas.",
+      image: "/images/servicio-de-seguridad-de-prevención-de-perdidas.webp",
       buttonText: "SOLICITAR COTIZACIÓN"
     }
   ];
@@ -75,9 +75,10 @@ const Hero = () => {
             className={`absolute inset-0 transition-transform duration-500 ease-in-out ${slideClass}`}
           >
           <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            className="absolute inset-0 bg-cover bg-no-repeat"
             style={{ 
               backgroundImage: `url(${slide.image})`,
+              backgroundPosition: (slide.id === 2 || slide.id === 3) ? 'center' : 'center top',
               filter: 'blur(2px)'
             }}
           >
