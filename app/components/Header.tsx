@@ -120,7 +120,11 @@ const Header = () => {
                       <Link
                         key={service.name}
                         href={service.href}
-                        className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors border-b border-gray-100 last:border-b-0"
+                        className={`block px-4 py-3 transition-colors border-b border-gray-100 last:border-b-0 ${
+                          pathname === service.href
+                            ? 'text-white bg-red-800 font-semibold'
+                            : 'text-gray-700 hover:bg-blue-50 hover:text-blue-600'
+                        }`}
                       >
                         {service.name}
                       </Link>
@@ -136,18 +140,40 @@ const Header = () => {
             <div className="lg:hidden">
               <div className="px-2 sm:px-4 pt-2 pb-4 sm:pb-5 space-y-1">
                 {navigation.map((item) => (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    onClick={() => setIsMenuOpen(false)}
-                    className={`text-white hover:text-yellow-400 block px-3 py-2 sm:py-3 text-base sm:text-lg font-bold border-l-4 rounded-r ${
-                      activeLink === item.name 
-                        ? 'border-red-500 bg-blue-800' 
-                        : 'border-transparent hover:bg-blue-800'
-                    }`}
-                  >
-                    {item.name}
-                  </Link>
+                  <div key={item.name}>
+                    <Link
+                      href={item.href}
+                      onClick={() => !item.hasDropdown && setIsMenuOpen(false)}
+                      className={`text-white hover:text-yellow-400 block px-3 py-2 sm:py-3 text-base sm:text-lg font-bold border-l-4 rounded-r ${
+                        activeLink === item.name 
+                          ? 'border-red-600 bg-red-800 font-semibold' 
+                          : 'border-transparent hover:bg-blue-800'
+                      }`}
+                    >
+                      {item.name}
+                      {item.hasDropdown && <span className="ml-1">▼</span>}
+                    </Link>
+                    
+                    {/* Mobile Dropdown for Services - Always visible */}
+                    {item.hasDropdown && (
+                      <div className="ml-4 mt-2 space-y-1">
+                        {servicesDropdown.map((service) => (
+                          <Link
+                            key={service.name}
+                            href={service.href}
+                            onClick={() => setIsMenuOpen(false)}
+                            className={`block px-3 py-2 text-sm border-l-2 transition-colors ${
+                              pathname === service.href
+                                ? 'text-white border-red-600 bg-red-800 font-semibold'
+                                : 'text-blue-200 border-blue-700 hover:text-yellow-400 hover:border-yellow-400'
+                            }`}
+                          >
+                            {service.name}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 ))}
               </div>
             </div>
