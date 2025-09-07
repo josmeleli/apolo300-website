@@ -1,26 +1,34 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState('INICIO');
+  const pathname = usePathname();
 
   const navigation = [
-    { name: 'INICIO', href: '#' },
-    { name: 'NOSOTROS', href: '#' },
-    { name: 'SERVICIOS', href: '#', hasDropdown: true },
-    { name: 'POLÍTICAS', href: '#' },
-    { name: 'ÚNETE A NOSOTROS', href: '#' },
-    { name: 'BLOG', href: '#' },
-    { name: 'CONTACTO', href: '#' },
+    { name: 'INICIO', href: '/' },
+    { name: 'NOSOTROS', href: '/nosotros' },
+    { name: 'SERVICIOS', href: '/servicios', hasDropdown: true },
+    { name: 'POLÍTICAS', href: '/politicas' },
+    { name: 'ÚNETE A NOSOTROS', href: '/unete-a-nosotros' },
+    { name: 'BLOG', href: '/blog' },
+    { name: 'CONTACTO', href: '/contacto' },
   ];
 
-  const handleLinkClick = (linkName: string) => {
-    setActiveLink(linkName);
-    setIsMenuOpen(false); // Close mobile menu when link is clicked
-  };
+  // Update active link based on current pathname
+  useEffect(() => {
+    const currentNavItem = navigation.find(item => item.href === pathname);
+    if (currentNavItem) {
+      setActiveLink(currentNavItem.name);
+    } else if (pathname === '/') {
+      setActiveLink('INICIO');
+    }
+  }, [pathname]);
 
   return (
     <header className="fixed w-full top-0 z-50 shadow-lg">
@@ -72,10 +80,10 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex">
             {navigation.map((item) => (
-              <a
+              <Link
                 key={item.name}
                 href={item.href}
-                onClick={() => handleLinkClick(item.name)}
+                onClick={() => setIsMenuOpen(false)}
                 className={`text-white hover:text-yellow-400 transition-colors font-bold text-sm xl:text-base px-4 xl:px-6 py-3 border-b-2 whitespace-nowrap ${
                   activeLink === item.name 
                     ? 'border-red-500' 
@@ -84,7 +92,7 @@ const Header = () => {
               >
                 {item.name}
                 {item.hasDropdown && <span className="ml-1">▼</span>}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -93,10 +101,10 @@ const Header = () => {
             <div className="lg:hidden">
               <div className="px-2 sm:px-4 pt-2 pb-4 sm:pb-5 space-y-1">
                 {navigation.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
                     href={item.href}
-                    onClick={() => handleLinkClick(item.name)}
+                    onClick={() => setIsMenuOpen(false)}
                     className={`text-white hover:text-yellow-400 block px-3 py-2 sm:py-3 text-base sm:text-lg font-bold border-l-4 rounded-r ${
                       activeLink === item.name 
                         ? 'border-red-500 bg-blue-800' 
@@ -104,7 +112,7 @@ const Header = () => {
                     }`}
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
