@@ -46,7 +46,7 @@ export default function WhatsAppChat({ isOpen, onClose }: WhatsAppChatProps) {
             </svg>
           </div>
           <div>
-            <h3 className="font-semibold">Clavernet</h3>
+            <h3 className="font-semibold">Apolo300</h3>
             <p className="text-xs text-green-100">Asesor Comercial</p>
           </div>
         </div>
@@ -62,9 +62,9 @@ export default function WhatsAppChat({ isOpen, onClose }: WhatsAppChatProps) {
       <div className="p-4 h-64 overflow-y-auto bg-gray-50">
         <div className="space-y-3">
           <div className="bg-white p-3 rounded-lg shadow-sm border-l-4 border-green-500">
-            <p className="text-sm font-medium text-green-600">Clavernet</p>
+            <p className="text-sm font-medium text-green-600">Apolo300</p>
             <p className="text-sm text-gray-600 mt-1">
-              Hola! Bienvenidos a Clavernet 👋
+              Hola! Bienvenidos a Apolo300 👋
             </p>
             <p className="text-xs text-gray-400 mt-2">19:38</p>
           </div>
