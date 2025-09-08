@@ -36,6 +36,16 @@ export default function Nosotros() {
                   más alta calidad y confiabilidad.
                 </p>
               </div>
+              <div className="flex justify-center">
+                <img
+                  src="/images/apolo300-nosotros.webp"
+                  alt="APOLO300 - Equipo de Seguridad"
+                  className="w-full max-w-md rounded-lg shadow-lg"
+                />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-16">
               <div className="bg-blue-100 p-8 rounded-lg">
                 <h3 className="text-2xl font-bold text-blue-950 mb-4">Nuestra Misión</h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -44,9 +54,6 @@ export default function Nosotros() {
                   personalizadas y tecnología de vanguardia.
                 </p>
               </div>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-16">
               <div className="bg-yellow-50 p-8 rounded-lg">
                 <h3 className="text-2xl font-bold text-blue-950 mb-4">Nuestra Visión</h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -54,33 +61,6 @@ export default function Nosotros() {
                   destacando por nuestra innovación, profesionalismo y compromiso con la 
                   excelencia en cada servicio que brindamos.
                 </p>
-              </div>
-              <div>
-                <h2 className="text-3xl font-bold text-blue-950 mb-6">
-                  Nuestros Valores
-                </h2>
-                <ul className="space-y-3">
-                  <li className="flex items-center">
-                    <span className="text-yellow-500 mr-3">✓</span>
-                    <span className="text-gray-600">Compromiso y responsabilidad</span>
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-yellow-500 mr-3">✓</span>
-                    <span className="text-gray-600">Profesionalismo y excelencia</span>
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-yellow-500 mr-3">✓</span>
-                    <span className="text-gray-600">Confiabilidad y transparencia</span>
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-yellow-500 mr-3">✓</span>
-                    <span className="text-gray-600">Innovación y mejora continua</span>
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-yellow-500 mr-3">✓</span>
-                    <span className="text-gray-600">Respeto y integridad</span>
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
