@@ -53,69 +53,6 @@ export default function SeguridadEventos() {
                 </div>
               </div>
             </div>
-
-            {/* Features Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-              <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-blue-600 text-2xl">📋</span>
-                </div>
-                <h3 className="text-xl font-bold text-blue-950 mb-3">Planificación</h3>
-                <p className="text-gray-600">
-                  Análisis previo y planificación detallada de la seguridad del evento.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-blue-600 text-2xl">👥</span>
-                </div>
-                <h3 className="text-xl font-bold text-blue-950 mb-3">Control de Multitudes</h3>
-                <p className="text-gray-600">
-                  Manejo profesional de flujos de personas y control de capacidad.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-blue-600 text-2xl">🔍</span>
-                </div>
-                <h3 className="text-xl font-bold text-blue-950 mb-3">Revisión de Accesos</h3>
-                <p className="text-gray-600">
-                  Control riguroso de entrada con revisión de seguridad.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-blue-600 text-2xl">🚓</span>
-                </div>
-                <h3 className="text-xl font-bold text-blue-950 mb-3">Coordinación</h3>
-                <p className="text-gray-600">
-                  Trabajo conjunto con autoridades locales y servicios de emergencia.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-blue-600 text-2xl">⚡</span>
-                </div>
-                <h3 className="text-xl font-bold text-blue-950 mb-3">Respuesta de Emergencia</h3>
-                <p className="text-gray-600">
-                  Protocolos de emergencia y evacuación bien establecidos.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-blue-600 text-2xl">📡</span>
-                </div>
-                <h3 className="text-xl font-bold text-blue-950 mb-3">Comunicación</h3>
-                <p className="text-gray-600">
-                  Sistemas de comunicación profesional entre todo el equipo.
-                </p>
-              </div>
-            </div>
           </div>
         </section>
       </div>
