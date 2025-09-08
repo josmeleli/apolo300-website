@@ -1,5 +1,6 @@
 import PageLayout from '../../components/PageLayout'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function SeguridadCorporativa() {
   return (
@@ -39,12 +40,12 @@ export default function SeguridadCorporativa() {
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <button className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-bold hover:bg-yellow-300 transition-colors">
-                    Consulta Gratuita
-                  </button>
-                  <button className="border-2 border-blue-950 text-blue-950 px-6 py-3 rounded-lg font-bold hover:bg-blue-950 hover:text-white transition-colors">
-                    Descargar Brochure
-                  </button>
+                  <Link 
+                    href="/contacto"
+                    className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-bold hover:bg-yellow-300 transition-colors text-center"
+                  >
+                    CONTACTAR
+                  </Link>
                 </div>
               </div>
             </div>
