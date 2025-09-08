@@ -49,6 +49,24 @@ export default function SeguridadCorporativa() {
                 </div>
               </div>
             </div>
+
+            
+            {/* Call to Action */}
+            <div className="bg-blue-950 text-white rounded-lg p-8 text-center">
+              <h2 className="text-3xl font-bold mb-4 text-yellow-400">
+                Fortalece la Seguridad de tu Empresa
+              </h2>
+              <p className="text-xl mb-6 text-blue-200">
+                Protege tu negocio, empleados y activos empresariales con nuestras soluciones 
+                corporativas de seguridad. Agenda una consultoría gratuita hoy mismo.
+              </p>
+              <Link 
+                href="/contacto"
+                className="inline-block bg-yellow-400 text-black px-8 py-4 rounded-lg font-bold hover:bg-yellow-300 transition-colors"
+              >
+                CONSULTORÍA GRATUITA
+              </Link>
+            </div>
           </div>
         </section>
       </div>

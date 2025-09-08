@@ -48,6 +48,25 @@ export default function SeguridadResguardo() {
                 </div>
               </div>
             </div>
+
+            
+
+            {/* Call to Action */}
+            <div className="bg-blue-950 text-white rounded-lg p-8 text-center">
+              <h2 className="text-3xl font-bold mb-4 text-yellow-400">
+                Protege tus Activos más Valiosos
+              </h2>
+              <p className="text-xl mb-6 text-blue-200">
+                No arriesgues la seguridad de tus valores y activos importantes. Confía en 
+                nuestros servicios profesionales de resguardo y transporte seguro.
+              </p>
+              <Link 
+                href="/contacto"
+                className="inline-block bg-yellow-400 text-black px-8 py-4 rounded-lg font-bold hover:bg-yellow-300 transition-colors"
+              >
+                SOLICITAR RESGUARDO
+              </Link>
+            </div>
           </div>
         </section>
       </div>

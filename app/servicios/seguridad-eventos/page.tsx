@@ -53,6 +53,25 @@ export default function SeguridadEventos() {
                 </div>
               </div>
             </div>
+
+            
+
+            {/* Call to Action */}
+            <div className="bg-blue-950 text-white rounded-lg p-8 text-center">
+              <h2 className="text-3xl font-bold mb-4 text-yellow-400">
+                ¿Planificando un Evento?
+              </h2>
+              <p className="text-xl mb-6 text-blue-200">
+                Asegura el éxito de tu evento con nuestros servicios profesionales de seguridad. 
+                Contactanos para una consulta gratuita y cotización personalizada.
+              </p>
+              <Link 
+                href="/contacto"
+                className="inline-block bg-yellow-400 text-black px-8 py-4 rounded-lg font-bold hover:bg-yellow-300 transition-colors"
+              >
+                SOLICITAR COTIZACIÓN
+              </Link>
+            </div>
           </div>
         </section>
       </div>
