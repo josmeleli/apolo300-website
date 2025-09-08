@@ -217,47 +217,6 @@ export default function UneteANosotros() {
                 </div>
               </div>
 
-              {/* Requisitos */}
-              <div className="bg-white rounded-lg shadow-lg p-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                  Requisitos Generales
-                </h2>
-                
-                <div className="space-y-3">
-                  <div className="flex items-center">
-                    <div className="w-2 h-2 bg-green-600 rounded-full mr-3"></div>
-                    <span className="text-gray-700">Venezolano mayor de 18 años</span>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-2 h-2 bg-green-600 rounded-full mr-3"></div>
-                    <span className="text-gray-700">Bachiller completo</span>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-2 h-2 bg-green-600 rounded-full mr-3"></div>
-                    <span className="text-gray-700">Sin antecedentes penales</span>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-2 h-2 bg-green-600 rounded-full mr-3"></div>
-                    <span className="text-gray-700">Disponibilidad de horarios</span>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-2 h-2 bg-green-600 rounded-full mr-3"></div>
-                    <span className="text-gray-700">Certificado médico vigente</span>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-2 h-2 bg-green-600 rounded-full mr-3"></div>
-                    <span className="text-gray-700">Referencias personales y laborales</span>
-                  </div>
-                </div>
-
-                <div className="mt-6 p-4 bg-blue-50 rounded-lg">
-                  <p className="text-sm text-blue-800">
-                    <strong>Nota:</strong> La experiencia previa en seguridad es valorada pero no indispensable. 
-                    Ofrecemos capacitación completa a nuevos integrantes.
-                  </p>
-                </div>
-              </div>
-
               {/* Proceso de Selección */}
               <div className="bg-white rounded-lg shadow-lg p-8">
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">
