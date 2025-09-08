@@ -1,34 +1,41 @@
+import Link from 'next/link'
+
 const Services = () => {
   const services = [
     {
       id: 1,
       title: "Seguridad Privada",
       image: "/images/servicio-de-seguridad-privada.webp",
-      description: "Servicios de seguridad personalizada para residencias, oficinas y propiedades privadas con personal capacitado las 24 horas."
+      description: "Servicios de seguridad personalizada para residencias, oficinas y propiedades privadas con personal capacitado las 24 horas.",
+      route: "/servicios/seguridad-privada"
     },
     {
       id: 2,
       title: "Seguridad para Eventos",
       image: "/images/servicio-de-seguridad-para-eventos.webp",
-      description: "Protección especializada para eventos corporativos, sociales y masivos con control de acceso profesional."
+      description: "Protección especializada para eventos corporativos, sociales y masivos con control de acceso profesional.",
+      route: "/servicios/seguridad-eventos"
     },
     {
       id: 3,
       title: "Seguridad Corporativa",
       image: "/images/servicio-de-seguridad-corporativa.webp",
-      description: "Soluciones integrales de seguridad para empresas con vigilancia ejecutiva y protección de instalaciones."
+      description: "Soluciones integrales de seguridad para empresas con vigilancia ejecutiva y protección de instalaciones.",
+      route: "/servicios/seguridad-corporativa"
     },
     {
       id: 4,
       title: "Seguridad de Resguardo",
       image: "/images/servicio-de-seguridad-de-resguardo.webp",
-      description: "Protección especializada para bienes, valores y custodia de mercancías con máxima seguridad."
+      description: "Protección especializada para bienes, valores y custodia de mercancías con máxima seguridad.",
+      route: "/servicios/seguridad-resguardo"
     },
     {
       id: 5,
       title: "Seguridad de Prevención de Pérdidas",
       image: "/images/servicio-de-seguridad-de-prevención-de-perdidas.webp",
-      description: "Servicios especializados en prevención de robos y pérdidas en comercios con vigilancia discreta."
+      description: "Servicios especializados en prevención de robos y pérdidas en comercios con vigilancia discreta.",
+      route: "/servicios/prevencion-perdidas"
     }
   ];
 
@@ -62,9 +69,12 @@ const Services = () => {
                 <p className="text-gray-600 leading-relaxed text-sm md:text-base flex-grow line-clamp-4">
                   {service.description}
                 </p>
-                <button className="mt-4 text-yellow-500 font-semibold hover:text-yellow-600 transition-colors text-left">
+                <Link 
+                  href={service.route}
+                  className="mt-4 text-yellow-500 font-semibold hover:text-yellow-600 transition-colors text-left inline-block"
+                >
                   Leer más →
-                </button>
+                </Link>
               </div>
             </div>
           ))}
@@ -92,9 +102,12 @@ const Services = () => {
                   <p className="text-gray-600 leading-relaxed text-sm md:text-base flex-grow line-clamp-4">
                     {service.description}
                   </p>
-                  <button className="mt-4 text-yellow-500 font-semibold hover:text-yellow-600 transition-colors text-left">
+                  <Link 
+                    href={service.route}
+                    className="mt-4 text-yellow-500 font-semibold hover:text-yellow-600 transition-colors text-left inline-block"
+                  >
                     Leer más →
-                  </button>
+                  </Link>
                 </div>
               </div>
             ))}
