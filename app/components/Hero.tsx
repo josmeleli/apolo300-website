@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
+import Link from 'next/link';
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -12,35 +13,40 @@ const Hero = () => {
       title: "SEGURIDAD PRIVADA",
       description: "Servicios de seguridad personalizada para residencias, oficinas y propiedades privadas. Protección profesional 24/7 con personal capacitado y tecnología avanzada.",
       image: "/images/servicio-de-seguridad-privada.webp",
-      buttonText: "SOLICITAR COTIZACIÓN"
+      buttonText: "INGRESAR",
+      route: "/servicios/seguridad-privada"
     },
     {
       id: 2,
       title: "SEGURIDAD PARA EVENTOS",
       description: "Protección especializada para eventos corporativos, sociales y masivos. Control de acceso, vigilancia perimetral y manejo de multitudes con personal experimentado.",
       image: "/images/servicio-de-seguridad-para-eventos.webp",
-      buttonText: "SOLICITAR COTIZACIÓN"
+      buttonText: "INGRESAR",
+      route: "/servicios/seguridad-eventos"
     },
     {
       id: 3,
       title: "SEGURIDAD CORPORATIVA",
       description: "Soluciones integrales de seguridad para empresas y corporaciones. Vigilancia ejecutiva, protección de instalaciones y control de acceso empresarial.",
       image: "/images/servicio-de-seguridad-corporativa.webp",
-      buttonText: "SOLICITAR COTIZACIÓN"
+      buttonText: "INGRESAR",
+      route: "/servicios/seguridad-corporativa"
     },
     {
       id: 4,
       title: "SEGURIDAD DE RESGUARDO",
       description: "Protección especializada para bienes y valores. Custodia de mercancías, transporte de valores y resguardo de activos importantes con máxima seguridad.",
       image: "/images/servicio-de-seguridad-de-resguardo.webp",
-      buttonText: "SOLICITAR COTIZACIÓN"
+      buttonText: "INGRESAR",
+      route: "/servicios/seguridad-resguardo"
     },
     {
       id: 5,
       title: "SEGURIDAD DE PREVENCIÓN DE PÉRDIDAS", 
       description: "Servicios especializados en prevención de robos y pérdidas en comercios y almacenes. Vigilancia discreta y estrategias de protección efectivas.",
       image: "/images/servicio-de-seguridad-de-prevención-de-perdidas.webp",
-      buttonText: "SOLICITAR COTIZACIÓN"
+      buttonText: "INGRESAR",
+      route: "/servicios/prevencion-perdidas"
     }
   ];
 
@@ -103,9 +109,12 @@ const Hero = () => {
               <p className="text-lg md:text-xl mb-8 leading-relaxed drop-shadow-lg">
                 {slide.description}
               </p>
-              <button className="bg-yellow-400 text-black px-8 py-3 rounded font-bold text-lg hover:bg-yellow-300 transition-colors drop-shadow-lg">
+              <Link 
+                href={slide.route}
+                className="bg-yellow-400 text-black px-8 py-3 rounded font-bold text-lg hover:bg-yellow-300 transition-colors drop-shadow-lg inline-block"
+              >
                 {slide.buttonText}
-              </button>
+              </Link>
             </div>
           </div>
           </div>
