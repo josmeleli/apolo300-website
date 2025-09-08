@@ -72,8 +72,26 @@ export default function Home() {
         </section>
 
         {/* Sección de Contacto */}
-        <section className="py-16 bg-blue-900">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-16 relative">
+          {/* Imagen de fondo */}
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ 
+              backgroundImage: 'url(/images/servicio-de-seguridad-corporativa.webp)',
+              backgroundPosition: 'center'
+            }}
+          ></div>
+          
+          {/* Filtro azulado más fuerte */}
+          <div 
+            className="absolute inset-0"
+            style={{
+              background: 'rgba(30, 58, 138, 0.9)', // blue-900 con mayor opacidad
+              zIndex: 1
+            }}
+          ></div>
+
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                 Solicita una Cotización
