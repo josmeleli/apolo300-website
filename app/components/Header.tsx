@@ -55,7 +55,7 @@ const Header = () => {
   // Don't render interactive elements until hydrated
   if (!isHydrated) {
     return (
-      <header className="fixed w-full top-0 z-50 shadow-lg">
+      <header className="fixed w-full top-0 z-[100] shadow-lg">
         {/* Top bar - White background with logo and social media */}
         <div className="bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
@@ -117,7 +117,7 @@ const Header = () => {
   }
 
   return (
-    <header className="fixed w-full top-0 z-50 shadow-lg">
+    <header className="fixed w-full top-0 z-[100] shadow-lg">
       {/* Top bar - White background with logo and social media */}
       <div className="bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">

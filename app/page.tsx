@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <PageLayout>
+    <PageLayout noMainPadding={true}>
       <main>
         <Hero />
         <Services />

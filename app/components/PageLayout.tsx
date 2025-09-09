@@ -7,22 +7,23 @@ import WhatsAppChat from './WhatsAppChat'
 
 interface LayoutProps {
   children: React.ReactNode
+  noMainPadding?: boolean
 }
 
-export default function PageLayout({ children }: LayoutProps) {
+export default function PageLayout({ children, noMainPadding = false }: LayoutProps) {
   const [isChatOpen, setIsChatOpen] = useState(false)
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-white">
       <Header />
-      <main className="pt-24 sm:pt-28 md:pt-32">
+      <main className={noMainPadding ? "" : "pt-24 sm:pt-28 md:pt-32"}>
         {children}
       </main>
       
       <Footer />
       
       {/* WhatsApp Float Button */}
-      <div className="fixed bottom-6 right-6 z-50">
+      <div className="fixed bottom-6 right-6 z-[90]">
         <div className="relative">
           <button
             onClick={() => setIsChatOpen(!isChatOpen)}
