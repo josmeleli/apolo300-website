@@ -119,7 +119,7 @@ export default function NuevasTecnologias() {
               Mirando hacia el futuro, estamos explorando tecnologías emergentes como la realidad aumentada para nuestros agentes, blockchain para registros de seguridad inmutables, y machine learning para análisis predictivo de riesgos.
             </p>
 
-            <div className="bg-blue-600 text-white rounded-lg p-8 text-center">
+            <div className="bg-blue-950 text-white rounded-lg p-8 text-center">
               <h3 className="text-xl font-bold mb-4">¿Interesado en nuestros servicios tecnológicos?</h3>
               <p className="mb-6">
                 Contacta con nuestro equipo de expertos para conocer cómo podemos implementar estas tecnologías en tu empresa.

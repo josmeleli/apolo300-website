@@ -198,7 +198,7 @@ export default function ProtocolosSeguridad() {
               </div>
             </div>
 
-            <div className="bg-blue-600 text-white rounded-lg p-8 text-center">
+            <div className="bg-blue-950 text-white rounded-lg p-8 text-center">
               <h3 className="text-xl font-bold mb-4">¿Necesitas seguridad para tu centro comercial?</h3>
               <p className="mb-6">
                 Nuestros especialistas pueden diseñar un protocolo de seguridad personalizado para tu establecimiento.

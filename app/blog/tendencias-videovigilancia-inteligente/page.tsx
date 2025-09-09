@@ -270,7 +270,7 @@ export default function TendenciasVideovigilancia() {
               </div>
             </div>
 
-            <div className="bg-blue-600 text-white rounded-lg p-8 text-center">
+            <div className="bg-blue-950 text-white rounded-lg p-8 text-center">
               <h3 className="text-xl font-bold mb-4">¿Listo para modernizar tu sistema de videovigilancia?</h3>
               <p className="mb-6">
                 Nuestros expertos pueden evaluar tus necesidades y diseñar un sistema de videovigilancia inteligente personalizado.

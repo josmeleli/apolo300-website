@@ -218,7 +218,7 @@ export default function ImportanciaCapacitacion() {
               </div>
             </div>
 
-            <div className="bg-blue-600 text-white rounded-lg p-8 text-center">
+            <div className="bg-blue-950 text-white rounded-lg p-8 text-center">
               <h3 className="text-xl font-bold mb-4">¿Interesado en formar parte de nuestro equipo?</h3>
               <p className="mb-6">
                 Únete a APOLO300 y accede a nuestro programa de capacitación continua que te permitirá crecer profesionalmente.
