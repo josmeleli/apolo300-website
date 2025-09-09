@@ -8,9 +8,9 @@ export default function Blog() {
   const articles = [
     {
       id: 1,
-      title: "Nuevas Tecnologías en Seguridad Privada 2024",
+      title: "Nuevas Tecnologías en Seguridad Privada 2025",
       excerpt: "Descubre las últimas innovaciones tecnológicas que están revolucionando el sector de la seguridad privada.",
-      date: "15 Enero 2024",
+      date: "15 Enero 2025",
       category: "Tecnología",
       readTime: "5 min",
       image: "/images/apolo300-logo.webp",
@@ -42,28 +42,8 @@ export default function Blog() {
       category: "Tecnología",
       readTime: "6 min",
       image: "/images/apolo300-logo.webp"
-    },
-    {
-      id: 5,
-      title: "Seguridad Residencial: Consejos Prácticos",
-      excerpt: "Recomendaciones esenciales para mejorar la seguridad en comunidades residenciales.",
-      date: "20 Diciembre 2023",
-      category: "Consejos",
-      readTime: "8 min",
-      image: "/images/apolo300-logo.webp"
-    },
-    {
-      id: 6,
-      title: "Control de Acceso: Sistemas Biométricos",
-      excerpt: "Análisis de las ventajas y aplicaciones de los sistemas de control de acceso biométrico.",
-      date: "15 Diciembre 2023",
-      category: "Tecnología",
-      readTime: "5 min",
-      image: "/images/apolo300-logo.webp"
     }
   ];
-
-  const categories = ["Todos", "Tecnología", "Protocolos", "Formación", "Consejos"];
 
   return (
     <PageLayout>
@@ -82,21 +62,6 @@ export default function Blog() {
 
         <div className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Filtros por Categoría */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {categories.map((category) => (
-              <button
-                key={category}
-                className={`px-6 py-2 rounded-full border transition-colors ${
-                  category === "Todos" 
-                    ? "bg-blue-600 text-white border-blue-600" 
-                    : "bg-white text-gray-700 border-gray-300 hover:bg-gray-50"
-                }`}
-              >
-                {category}
-              </button>
-            ))}
-          </div>
 
           {/* Artículo Destacado */}
           {articles.filter(article => article.featured).map((article) => (
@@ -171,71 +136,6 @@ export default function Blog() {
                 </div>
               </article>
             ))}
-          </div>
-
-          {/* Newsletter Subscription */}
-          <div className="bg-blue-600 rounded-lg p-8 mt-16 text-center">
-            <h2 className="text-2xl font-bold text-white mb-4">
-              Suscríbete a Nuestro Newsletter
-            </h2>
-            <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-              Recibe las últimas noticias, artículos y actualizaciones sobre seguridad 
-              directamente en tu correo electrónico.
-            </p>
-            <div className="max-w-md mx-auto flex gap-4">
-              <input
-                type="email"
-                placeholder="Tu correo electrónico"
-                className="flex-1 px-4 py-3 rounded-lg border-0 focus:ring-2 focus:ring-blue-300 focus:outline-none"
-              />
-              <button className="bg-white text-blue-600 px-6 py-3 rounded-lg hover:bg-gray-50 transition-colors font-medium">
-                Suscribirse
-              </button>
-            </div>
-          </div>
-
-          {/* Categorías Populares */}
-          <div className="mt-16">
-            <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-              Categorías Populares
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {["Tecnología", "Protocolos", "Formación", "Consejos"].map((category) => (
-                <div key={category} className="bg-white rounded-lg p-6 text-center shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-blue-600 text-xl">📋</span>
-                  </div>
-                  <h3 className="font-semibold text-gray-900 mb-2">{category}</h3>
-                  <p className="text-gray-600 text-sm">
-                    {Math.floor(Math.random() * 20) + 5} artículos
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Paginación */}
-          <div className="flex justify-center items-center gap-4 mt-16">
-            <button className="px-4 py-2 border border-gray-300 rounded-lg text-gray-600 hover:bg-gray-50 transition-colors">
-              ← Anterior
-            </button>
-            <div className="flex gap-2">
-              {[1, 2, 3, "...", 8].map((page, index) => (
-                <button
-                  key={index}
-                  className={`w-10 h-10 rounded-lg transition-colors ${
-                    page === 1 
-                      ? "bg-blue-600 text-white" 
-                      : "border border-gray-300 text-gray-600 hover:bg-gray-50"
-                  }`}
-                >
-                  {page}
-                </button>
-              ))}
-            </div>
-            <button className="px-4 py-2 border border-gray-300 rounded-lg text-gray-600 hover:bg-gray-50 transition-colors">
-              Siguiente →
-            </button>
           </div>
           </div>
         </div>
