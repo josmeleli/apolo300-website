@@ -13,7 +13,7 @@ export default function Blog() {
       date: "15 Enero 2025",
       category: "Tecnología",
       readTime: "5 min",
-      image: "/images/apolo300-logo.webp",
+      image: "https://th.bing.com/th/id/R.31d8d711269fc94d40269978fe8f3cc4?rik=X3S5pFc7lBsOQg&pid=ImgRaw&r=0",
       featured: true
     },
     {
@@ -23,7 +23,7 @@ export default function Blog() {
       date: "08 Enero 2024",
       category: "Protocolos",
       readTime: "7 min",
-      image: "/images/apolo300-logo.webp"
+      image: "https://images.unsplash.com/photo-1555636222-cae831e670b3?w=800&h=600&fit=crop&crop=center"
     },
     {
       id: 3,
@@ -32,7 +32,7 @@ export default function Blog() {
       date: "02 Enero 2024",
       category: "Formación",
       readTime: "4 min",
-      image: "/images/apolo300-logo.webp"
+      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&crop=center"
     },
     {
       id: 4,
@@ -41,7 +41,7 @@ export default function Blog() {
       date: "28 Diciembre 2023",
       category: "Tecnología",
       readTime: "6 min",
-      image: "/images/apolo300-logo.webp"
+      image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=600&fit=crop&crop=center"
     }
   ];
 
