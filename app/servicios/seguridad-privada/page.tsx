@@ -38,9 +38,7 @@ export default function SeguridadPrivada() {
                   Protección Integral para tu Propiedad
                 </h2>
                 <p className="text-gray-600 text-lg mb-6">
-                  Nuestros servicios de seguridad privada ofrecen protección completa para residencias, 
-                  oficinas y propiedades privadas. Con personal altamente capacitado y tecnología de 
-                  vanguardia, garantizamos la seguridad de sus bienes y seres queridos las 24 horas del día.
+                  <span className="font-semibold text-blue-950">Protege lo que más amas con la tranquilidad que mereces.</span> Nuestros servicios de seguridad privada representan la <span className="font-semibold text-blue-950">máxima expresión en protección residencial y empresarial</span>, diseñados exclusivamente para clientes que no aceptan compromisos en su seguridad. Con <span className="font-semibold text-yellow-600">personal de élite altamente especializado</span> y tecnología de vanguardia de última generación, creamos un <span className="font-semibold text-blue-950">escudo invisible e impenetrable</span> que protege sus bienes más valiosos y seres queridos las 24 horas del día, los 365 días del año. <span className="font-semibold text-blue-950">Su paz mental es nuestra misión.</span>
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
