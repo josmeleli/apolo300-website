@@ -2,6 +2,7 @@
 
 import PageLayout from '../components/PageLayout';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Blog() {
   // Artículos de ejemplo para el blog
@@ -14,7 +15,8 @@ export default function Blog() {
       category: "Tecnología",
       readTime: "5 min",
       image: "https://th.bing.com/th/id/R.31d8d711269fc94d40269978fe8f3cc4?rik=X3S5pFc7lBsOQg&pid=ImgRaw&r=0",
-      featured: true
+      featured: true,
+      slug: "nuevas-tecnologias-en-seguridad-privada-2025"
     },
     {
       id: 2,
@@ -23,7 +25,8 @@ export default function Blog() {
       date: "08 Enero 2024",
       category: "Protocolos",
       readTime: "7 min",
-      image: "https://images.unsplash.com/photo-1555636222-cae831e670b3?w=800&h=600&fit=crop&crop=center"
+      image: "https://images.unsplash.com/photo-1555636222-cae831e670b3?w=800&h=600&fit=crop&crop=center",
+      slug: "protocolos-seguridad-centros-comerciales"
     },
     {
       id: 3,
@@ -32,7 +35,8 @@ export default function Blog() {
       date: "02 Enero 2024",
       category: "Formación",
       readTime: "4 min",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&crop=center"
+      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&crop=center",
+      slug: "importancia-capacitacion-continua"
     },
     {
       id: 4,
@@ -41,7 +45,8 @@ export default function Blog() {
       date: "28 Diciembre 2023",
       category: "Tecnología",
       readTime: "6 min",
-      image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=600&fit=crop&crop=center"
+      image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=600&fit=crop&crop=center",
+      slug: "tendencias-videovigilancia-inteligente"
     }
   ];
 
@@ -94,9 +99,12 @@ export default function Blog() {
                   <p className="text-gray-600 mb-6 text-lg">
                     {article.excerpt}
                   </p>
-                  <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium w-fit">
+                  <Link 
+                    href={`/blog/${article.slug}`}
+                    className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium w-fit inline-block"
+                  >
                     Leer Artículo Completo
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -129,9 +137,12 @@ export default function Blog() {
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-500 text-xs">{article.date}</span>
-                    <button className="text-blue-600 hover:text-blue-700 font-medium text-sm">
+                    <Link 
+                      href={`/blog/${article.slug}`}
+                      className="text-blue-600 hover:text-blue-700 font-medium text-sm"
+                    >
                       Leer más →
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </article>
