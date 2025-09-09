@@ -25,15 +25,13 @@ export default function Nosotros() {
                   ¿Quiénes Somos?
                 </h2>
                 <p className="text-gray-600 text-lg leading-relaxed mb-4">
-                  APOLO300 es una empresa especializada en servicios de seguridad integral, 
-                  comprometida con la protección de personas, bienes y propiedades. Con años 
-                  de experiencia en el sector, nos hemos consolidado como una empresa líder 
-                  en soluciones de seguridad personalizada.
+                  Somos <span className="font-semibold text-blue-950">APOLO300</span>, un Grupo Empresarial moderno e integral que le ofrece los más amplios patrones de <span className="font-semibold text-blue-950">calidad, seguridad, tecnología y recursos humanos especializados</span>. Con amplia experiencia y consolidada presencia en el mercado empresarial peruano, nos especializamos en brindar <span className="font-semibold text-blue-950">Servicios Integrales de Seguridad</span> de clase mundial.
+                </p>
+                <p className="text-gray-600 text-lg leading-relaxed mb-4">
+                  Nuestra filosofía se centra en ofrecer <span className="font-semibold text-blue-950">servicios de máxima calidad</span>, perfectamente alineados a los requerimientos específicos y particulares de cada uno de nuestros clientes, desde pequeñas empresas hasta grandes corporaciones.
                 </p>
                 <p className="text-gray-600 text-lg leading-relaxed">
-                  Nuestro equipo está conformado por profesionales altamente capacitados y 
-                  certificados, que trabajan con dedicación para brindar servicios de la 
-                  más alta calidad y confiabilidad.
+                  <span className="font-semibold text-blue-950">Nuestro objetivo es claro:</span> promover un nivel de servicio excepcional, contar con el mejor recurso humano del sector y desarrollar continuamente nuevas estrategias innovadoras para proteger lo que más valoras. En APOLO300, tu seguridad es nuestra prioridad número uno.
                 </p>
               </div>
               <div className="flex justify-center">
@@ -49,17 +47,13 @@ export default function Nosotros() {
               <div className="bg-blue-100 p-8 rounded-lg">
                 <h3 className="text-2xl font-bold text-blue-950 mb-4">Nuestra Misión</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Brindar servicios de seguridad integral de excelencia, garantizando la 
-                  protección y tranquilidad de nuestros clientes a través de soluciones 
-                  personalizadas y tecnología de vanguardia.
+                  <span className="font-semibold text-blue-950">Transformar la seguridad en tranquilidad</span> mediante servicios integrales de excelencia incomparable. Garantizamos la protección total de nuestros clientes a través de soluciones personalizadas, tecnología de vanguardia y un equipo humano de élite, creando un escudo de confianza que permite a nuestros clientes enfocarse en lo que realmente importa: hacer crecer sus negocios y disfrutar de su vida con total serenidad.
                 </p>
               </div>
               <div className="bg-yellow-50 p-8 rounded-lg">
                 <h3 className="text-2xl font-bold text-blue-950 mb-4">Nuestra Visión</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Ser reconocidos como la empresa líder en servicios de seguridad en el Perú, 
-                  destacando por nuestra innovación, profesionalismo y compromiso con la 
-                  excelencia en cada servicio que brindamos.
+                  <span className="font-semibold text-blue-950">Ser la empresa de seguridad más confiable y respetada del Perú</span>, reconocida internacionalmente por nuestra innovación constante, profesionalismo excepcional y compromiso inquebrantable con la excelencia. Aspiramos a convertirmos en el <span className="font-semibold text-yellow-600">socio estratégico de seguridad preferido</span> por las empresas y familias más exigentes, estableciendo nuevos estándares en la industria de protección integral.
                 </p>
               </div>
             </div>
