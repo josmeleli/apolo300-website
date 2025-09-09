@@ -17,18 +17,22 @@ const Footer = () => {
           {/* Mapa de Ubicación */}
           <div className="text-center">
             <h4 className="text-lg font-semibold mb-4">Nuestra Ubicación</h4>
-            <div className="rounded-lg overflow-hidden border border-gray-300">
+            <div className="rounded-lg overflow-hidden border border-gray-300 cursor-pointer hover:border-yellow-400 transition-colors"
+                 onClick={() => window.open('https://maps.google.com/?q=Jirón+Bolívar+350,+Trujillo+13001,+Perú', '_blank')}
+                 title="Abrir en Google Maps"
+            >
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.0!2d-79.029!3d-8.111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMDYnNDAuMCJTIDc5wrAwMSc0NC40Ilc!5e0!3m2!1ses!2spe!4v1647123456789!5m2!1ses!2spe"
                 width="100%"
                 height="192"
-                style={{ border: 0 }}
+                style={{ border: 0, pointerEvents: 'none' }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Ubicación APOLO300 - Jirón Bolívar 350, Trujillo 13001, Perú"
               ></iframe>
             </div>
+            <p className="text-blue-200 text-xs mt-2">Click para abrir en Google Maps</p>
           </div>
 
           {/* Contáctenos */}
