@@ -68,7 +68,7 @@ export default function WhatsAppChat({ isOpen, onClose }: WhatsAppChatProps) {
             <p className="text-sm text-gray-600 mt-1">
               Hola! Bienvenidos a APOLO300 👋
             </p>
-            <p className="text-xs text-gray-400 mt-2">19:38</p>
+            <p className="text-xs text-gray-700 mt-2 font-medium">19:38</p>
           </div>
           <div className="bg-white p-3 rounded-lg shadow-sm border-l-4 border-green-500">
             <p className="text-sm text-gray-600">
@@ -80,13 +80,13 @@ export default function WhatsAppChat({ isOpen, onClose }: WhatsAppChatProps) {
 
       {/* Quick replies */}
       <div className="p-3 border-t border-gray-200">
-        <p className="text-xs text-gray-500 mb-2">Mensajes rápidos:</p>
+        <p className="text-xs text-gray-800 mb-2 font-semibold">Mensajes rápidos:</p>
         <div className="space-y-1">
           {quickMessages.map((msg, index) => (
             <button
               key={index}
               onClick={() => setMessage(msg)}
-              className="w-full text-left text-xs bg-gray-100 hover:bg-gray-200 p-2 rounded transition-colors"
+              className="w-full text-left text-xs text-black bg-gray-100 hover:bg-gray-200 p-2 rounded transition-colors font-medium"
             >
               {msg}
             </button>
@@ -102,7 +102,7 @@ export default function WhatsAppChat({ isOpen, onClose }: WhatsAppChatProps) {
             onChange={(e) => setMessage(e.target.value)}
             onKeyPress={handleKeyPress}
             placeholder="Escribe tu mensaje..."
-            className="flex-1 p-2 border border-gray-300 rounded-lg resize-none text-sm focus:outline-none focus:border-green-500"
+            className="flex-1 p-2 border border-gray-300 rounded-lg resize-none text-sm text-black placeholder-gray-600 focus:outline-none focus:border-green-500"
             rows={2}
           />
           <button
