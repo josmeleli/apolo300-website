@@ -34,8 +34,7 @@ export default function PrevencionPerdidas() {
                   Protección Preventiva Inteligente
                 </h2>
                 <p className="text-gray-600 text-lg mb-6">
-                  Implementamos estrategias y tecnologías avanzadas para prevenir robos, fraudes y 
-                  pérdidas en establecimientos comerciales y empresariales, reduciendo riesgos operacionales.
+                  <span className="font-semibold text-blue-950">Transforme las pérdidas en ganancias con inteligencia preventiva de vanguardia.</span> Implementamos <span className="font-semibold text-blue-950">estrategias revolucionarias y tecnologías de inteligencia artificial</span> que van más allá de la seguridad tradicional, creando un <span className="font-semibold text-yellow-600">escudo digital inteligente contra robos, fraudes internos y pérdidas operacionales</span>. Nuestro enfoque proactivo no solo protege su establecimiento comercial o empresarial, sino que <span className="font-semibold text-blue-950">optimiza su rentabilidad al eliminar las fugas invisibles</span> que están erosionando silenciosamente sus utilidades. Con nosotros, cada peso invertido en prevención se convierte en múltiples pesos ahorrados.
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4">

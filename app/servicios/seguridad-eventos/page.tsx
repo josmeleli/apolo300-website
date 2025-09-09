@@ -38,9 +38,7 @@ export default function SeguridadEventos() {
                   Eventos Seguros y Exitosos
                 </h2>
                 <p className="text-gray-600 text-lg mb-6">
-                  Ofrecemos servicios especializados de seguridad para eventos corporativos, sociales 
-                  y masivos. Nuestro equipo experimentado en manejo de multitudes y control de acceso 
-                  garantiza que su evento se desarrolle sin contratiempos.
+                  <span className="font-semibold text-blue-950">Transforma tu evento en una experiencia inolvidable y completamente segura.</span> Nuestros servicios especializados en seguridad para eventos representan <span className="font-semibold text-blue-950">la excelencia en protección integral</span> para eventos corporativos de alto nivel, celebraciones sociales exclusivas y eventos masivos de gran envergadura. Contamos con <span className="font-semibold text-yellow-600">especialistas certificados en manejo de multitudes</span> y sistemas de control de acceso de última generación que garantizan que su evento se desarrolle <span className="font-semibold text-blue-950">sin ningún contratiempo, permitiendo que usted y sus invitados se enfoquen únicamente en disfrutar</span> de momentos únicos e irrepetibles.
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4">

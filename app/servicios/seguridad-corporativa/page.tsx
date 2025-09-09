@@ -34,9 +34,7 @@ export default function SeguridadCorporativa() {
                   Soluciones Empresariales Avanzadas
                 </h2>
                 <p className="text-gray-600 text-lg mb-6">
-                  Servicios integrales de seguridad corporativa que incluyen protección ejecutiva, 
-                  seguridad de instalaciones, gestión de riesgos y auditorías de seguridad para 
-                  empresas de todos los tamaños.
+                  <span className="font-semibold text-blue-950">Eleve su empresa al siguiente nivel con seguridad corporativa de clase mundial.</span> Nuestros servicios integrales de seguridad empresarial están <span className="font-semibold text-blue-950">diseñados exclusivamente para líderes visionarios</span> que entienden que la protección no es un gasto, sino la inversión más inteligente para el futuro de su organización. Incluimos <span className="font-semibold text-yellow-600">protección ejecutiva VIP, seguridad perimetral avanzada, gestión proactiva de riesgos</span> y auditorías especializadas de seguridad que <span className="font-semibold text-blue-950">blindan su patrimonio empresarial y garantizan la continuidad de sus operaciones</span>, sin importar el tamaño o complejidad de su empresa.
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4">

@@ -34,8 +34,7 @@ export default function SeguridadResguardo() {
                   Protección de Activos de Alto Valor
                 </h2>
                 <p className="text-gray-600 text-lg mb-6">
-                  Servicios especializados de custodia, transporte seguro de valores, documentos 
-                  importantes y mercancías de alto valor con los más estrictos protocolos de seguridad.
+                  <span className="font-semibold text-blue-950">Confíe sus activos más valiosos a los verdaderos expertos en protección.</span> Nuestros servicios especializados de custodia y resguardo representan <span className="font-semibold text-blue-950">el estándar de oro en protección de alto valor</span>, diseñados para salvaguardar sus bienes más preciados con la misma dedicación que un tesoro nacional. Ofrecemos <span className="font-semibold text-yellow-600">transporte blindado de valores, custodia ultra-segura de documentos críticos</span> y resguardo de mercancías de alto valor, todo respaldado por <span className="font-semibold text-blue-950">protocolos de seguridad militares y tecnología de vanguardia</span> que garantiza que sus activos lleguen a su destino en perfectas condiciones, sin excepción.
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
