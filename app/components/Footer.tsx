@@ -17,7 +17,7 @@ const Footer = () => {
           {/* Mapa de Ubicación */}
           <div className="text-center">
             <h4 className="text-lg font-semibold mb-4">Nuestra Ubicación</h4>
-            <div className="relative rounded-lg overflow-hidden border border-gray-300">
+            <div className="rounded-lg overflow-hidden border border-gray-300">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.0!2d-79.029!3d-8.111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMDYnNDAuMCJTIDc5wrAwMSc0NC40Ilc!5e0!3m2!1ses!2spe!4v1647123456789!5m2!1ses!2spe"
                 width="100%"
@@ -28,9 +28,6 @@ const Footer = () => {
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Ubicación APOLO300 - Jirón Bolívar 350, Trujillo 13001, Perú"
               ></iframe>
-              <div className="absolute top-2 left-2 bg-white bg-opacity-90 text-gray-700 px-2 py-1 rounded text-xs font-medium shadow">
-                <span className="text-blue-600 hover:underline cursor-pointer">Ampliar el mapa</span>
-              </div>
             </div>
           </div>
 
