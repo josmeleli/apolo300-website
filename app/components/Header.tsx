@@ -52,11 +52,13 @@ const Header = () => {
           <div className="flex justify-between items-center py-3 sm:py-4 md:py-6">
             {/* Logo */}
             <div className="flex items-center">
-              <img 
-                src="/images/apolo300-corporación.webp" 
-                alt="Apolo Security" 
-                className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto"
-              />
+              <Link href="/" className="flex items-center">
+                <img 
+                  src="/images/apolo300-corporación.webp" 
+                  alt="Apolo Security" 
+                  className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto cursor-pointer"
+                />
+              </Link>
             </div>
 
             {/* Social Media Icons */}
