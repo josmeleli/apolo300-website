@@ -34,7 +34,7 @@ export default function Contacto() {
                       type="text"
                       id="name"
                       name="name"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black placeholder-gray-600"
                       placeholder="Tu nombre completo"
                     />
                   </div>
@@ -47,7 +47,7 @@ export default function Contacto() {
                       type="email"
                       id="email"
                       name="email"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black placeholder-gray-600"
                       placeholder="tu@email.com"
                     />
                   </div>
@@ -60,7 +60,7 @@ export default function Contacto() {
                       type="tel"
                       id="phone"
                       name="phone"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black placeholder-gray-600"
                       placeholder="+51 999 999 999"
                     />
                   </div>
@@ -72,7 +72,7 @@ export default function Contacto() {
                     <select
                       id="service"
                       name="service"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black"
                     >
                       <option value="">Selecciona un servicio</option>
                       <option value="vigilancia-privada">Vigilancia Privada</option>
@@ -91,7 +91,7 @@ export default function Contacto() {
                       id="message"
                       name="message"
                       rows={4}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black placeholder-gray-600"
                       placeholder="Cuéntanos sobre tus necesidades de seguridad..."
                     ></textarea>
                   </div>

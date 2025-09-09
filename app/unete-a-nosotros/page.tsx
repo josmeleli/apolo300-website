@@ -37,7 +37,7 @@ export default function UneteANosotros() {
                     <input 
                       type="text" 
                       required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black placeholder-gray-600"
                       placeholder="Tu nombre completo"
                     />
                   </div>
@@ -49,7 +49,7 @@ export default function UneteANosotros() {
                     <input 
                       type="text" 
                       required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black placeholder-gray-600"
                       placeholder="Número de cédula"
                     />
                   </div>
@@ -63,7 +63,7 @@ export default function UneteANosotros() {
                     <input 
                       type="tel" 
                       required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black placeholder-gray-600"
                       placeholder="+58 412 123 4567"
                     />
                   </div>
@@ -75,7 +75,7 @@ export default function UneteANosotros() {
                     <input 
                       type="email" 
                       required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black placeholder-gray-600"
                       placeholder="tu.email@ejemplo.com"
                     />
                   </div>
@@ -88,7 +88,7 @@ export default function UneteANosotros() {
                   <textarea 
                     required
                     rows={3}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black placeholder-gray-600"
                     placeholder="Tu dirección completa"
                   />
                 </div>
@@ -99,7 +99,7 @@ export default function UneteANosotros() {
                   </label>
                   <select 
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
                   >
                     <option value="">Selecciona un cargo</option>
                     <option value="vigilante">Vigilante</option>
@@ -117,7 +117,7 @@ export default function UneteANosotros() {
                   </label>
                   <textarea 
                     rows={4}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black placeholder-gray-600"
                     placeholder="Describe tu experiencia en el sector seguridad, empresas anteriores, tiempo de servicio, etc."
                   />
                 </div>
@@ -129,19 +129,19 @@ export default function UneteANosotros() {
                   <div className="space-y-2">
                     <label className="flex items-center">
                       <input type="checkbox" className="mr-2" />
-                      <span>Turno Diurno (6:00 AM - 6:00 PM)</span>
+                      <span className="text-black">Turno Diurno (6:00 AM - 6:00 PM)</span>
                     </label>
                     <label className="flex items-center">
                       <input type="checkbox" className="mr-2" />
-                      <span>Turno Nocturno (6:00 PM - 6:00 AM)</span>
+                      <span className="text-black">Turno Nocturno (6:00 PM - 6:00 AM)</span>
                     </label>
                     <label className="flex items-center">
                       <input type="checkbox" className="mr-2" />
-                      <span>Fines de Semana</span>
+                      <span className="text-black">Fines de Semana</span>
                     </label>
                     <label className="flex items-center">
                       <input type="checkbox" className="mr-2" />
-                      <span>Disponibilidad Completa</span>
+                      <span className="text-black">Disponibilidad Completa</span>
                     </label>
                   </div>
                 </div>
@@ -152,7 +152,7 @@ export default function UneteANosotros() {
                   </label>
                   <textarea 
                     rows={3}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black placeholder-gray-600"
                     placeholder="Cualquier información adicional que consideres relevante..."
                   />
                 </div>
