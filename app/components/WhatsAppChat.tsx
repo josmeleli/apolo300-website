@@ -11,10 +11,18 @@ interface WhatsAppChatProps {
 export default function WhatsAppChat({ isOpen, onClose }: WhatsAppChatProps) {
   const [message, setMessage] = useState('')
 
+  // Detectar si es dispositivo móvil
+  const isMobile = () => {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+  }
+
   const handleSendMessage = () => {
     if (message.trim()) {
       const encodedMessage = encodeURIComponent(message)
-      window.open(`https://web.whatsapp.com/send?phone=51959924343&text=${encodedMessage}`, '_blank')
+      const whatsappUrl = isMobile() 
+        ? `https://wa.me/51959924343?text=${encodedMessage}`
+        : `https://web.whatsapp.com/send?phone=51959924343&text=${encodedMessage}`
+      window.open(whatsappUrl, '_blank')
       setMessage('')
       onClose()
     }
@@ -117,7 +125,12 @@ export default function WhatsAppChat({ isOpen, onClose }: WhatsAppChatProps) {
         
         {/* Click para conversar button */}
         <button
-          onClick={() => window.open('https://web.whatsapp.com/send?phone=51959924343', '_blank')}
+          onClick={() => {
+            const whatsappUrl = isMobile() 
+              ? 'https://wa.me/51959924343'
+              : 'https://web.whatsapp.com/send?phone=51959924343'
+            window.open(whatsappUrl, '_blank')
+          }}
           className="w-full mt-1 sm:mt-2 bg-gray-100 hover:bg-gray-200 text-gray-700 py-2 px-4 rounded-lg text-sm font-medium transition-colors flex items-center justify-center space-x-2"
         >
           <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 448 512">
