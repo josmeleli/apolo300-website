@@ -36,6 +36,13 @@ const Services = () => {
       image: "/images/servicio-de-seguridad-de-prevención-de-perdidas.webp",
       description: "Servicios especializados en prevención de robos y pérdidas en comercios con vigilancia discreta.",
       route: "/servicios/prevencion-perdidas"
+    },
+    {
+      id: 6,
+      title: "Seguridad Electrónica",
+      image: "/images/servicio-de-seguridad-corporativa.webp",
+      description: "Sistemas avanzados de alarmas, CCTV, control de acceso y monitoreo 24/7 con tecnología de punta.",
+      route: "/servicios/seguridad-electronica"
     }
   ];
 
@@ -80,38 +87,36 @@ const Services = () => {
           ))}
         </div>
 
-        {/* Últimos 2 servicios - Fila inferior centrada */}
-        <div className="flex justify-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl">
-            {services.slice(3, 5).map((service) => (
-              <div
-                key={service.id}
-                className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col"
-              >
-                <div className="h-48 overflow-hidden">
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-lg md:text-xl font-bold text-blue-900 mb-3">
-                    {service.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed text-sm md:text-base flex-grow line-clamp-4">
-                    {service.description}
-                  </p>
-                  <Link 
-                    href={service.route}
-                    className="mt-4 text-yellow-500 font-semibold hover:text-yellow-600 transition-colors text-left inline-block"
-                  >
-                    Leer más →
-                  </Link>
-                </div>
+        {/* Últimos 3 servicios - Fila inferior */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {services.slice(3, 6).map((service) => (
+            <div
+              key={service.id}
+              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col"
+            >
+              <div className="h-48 overflow-hidden">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
               </div>
-            ))}
-          </div>
+              <div className="p-6 flex flex-col flex-grow">
+                <h3 className="text-lg md:text-xl font-bold text-blue-900 mb-3">
+                  {service.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-sm md:text-base flex-grow line-clamp-4">
+                  {service.description}
+                </p>
+                <Link 
+                  href={service.route}
+                  className="mt-4 text-yellow-500 font-semibold hover:text-yellow-600 transition-colors text-left inline-block"
+                >
+                  Leer más →
+                </Link>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

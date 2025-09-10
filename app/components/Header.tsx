@@ -28,6 +28,7 @@ const Header = () => {
     { name: 'Seguridad Corporativa', href: '/servicios/seguridad-corporativa' },
     { name: 'Seguridad de Resguardo', href: '/servicios/seguridad-resguardo' },
     { name: 'Prevención de Pérdidas', href: '/servicios/prevencion-perdidas' },
+    { name: 'Seguridad Electrónica', href: '/servicios/seguridad-electronica' },
   ];
 
   // Hydration effect
