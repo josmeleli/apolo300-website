@@ -1,6 +1,90 @@
-import PageLayout from '../components/PageLayout'
+'use client';
+
+import { useState } from 'react';
+import PageLayout from '../components/PageLayout';
+import { sendContactEmail, type ContactFormData, isValidEmail, isValidPhone } from '../utils/emailService';
 
 export default function Contacto() {
+  const [formData, setFormData] = useState<ContactFormData>({
+    name: '',
+    email: '',
+    phone: '',
+    service: '',
+    message: ''
+  });
+  
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [errors, setErrors] = useState<Partial<ContactFormData>>({});
+
+  const validateForm = (): boolean => {
+    const newErrors: Partial<ContactFormData> = {};
+
+    if (!formData.name.trim()) {
+      newErrors.name = 'El nombre es requerido';
+    }
+
+    if (!formData.email.trim()) {
+      newErrors.email = 'El email es requerido';
+    } else if (!isValidEmail(formData.email)) {
+      newErrors.email = 'Por favor ingresa un email válido';
+    }
+
+    if (!formData.phone.trim()) {
+      newErrors.phone = 'El teléfono es requerido';
+    } else if (!isValidPhone(formData.phone)) {
+      newErrors.phone = 'Por favor ingresa un teléfono válido';
+    }
+
+    if (!formData.service.trim()) {
+      newErrors.service = 'Por favor selecciona un servicio';
+    }
+
+    if (!formData.message.trim()) {
+      newErrors.message = 'El mensaje es requerido';
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+    
+    // Limpiar errores cuando el usuario comience a escribir
+    if (errors[name as keyof ContactFormData]) {
+      setErrors(prev => ({ ...prev, [name]: undefined }));
+    }
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!validateForm()) {
+      return;
+    }
+
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      await sendContactEmail(formData);
+      setSubmitStatus('success');
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        service: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   return (
     <PageLayout>
       <div className="min-h-screen bg-gray-50">
@@ -25,54 +109,96 @@ export default function Contacto() {
                 <h2 className="text-3xl font-bold text-blue-950 mb-6">
                   Envíanos un Mensaje
                 </h2>
-                <form className="space-y-6">
+                
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  {submitStatus === 'success' && (
+                    <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
+                      <div className="flex items-center">
+                        <svg className="w-5 h-5 text-green-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                        </svg>
+                        <p className="text-green-800 font-medium">¡Mensaje enviado exitosamente! Nos contactaremos contigo pronto.</p>
+                      </div>
+                    </div>
+                  )}
+
+                  {submitStatus === 'error' && (
+                    <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
+                      <div className="flex items-center">
+                        <svg className="w-5 h-5 text-red-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                        </svg>
+                        <p className="text-red-800 font-medium">Error al enviar el mensaje. Por favor, inténtalo de nuevo.</p>
+                      </div>
+                    </div>
+                  )}
+
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                      Nombre Completo
+                      Nombre Completo *
                     </label>
                     <input
                       type="text"
                       id="name"
                       name="name"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black placeholder-gray-600"
+                      value={formData.name}
+                      onChange={handleInputChange}
+                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black placeholder-gray-600 ${
+                        errors.name ? 'border-red-500' : 'border-gray-300'
+                      }`}
                       placeholder="Tu nombre completo"
                     />
+                    {errors.name && <p className="mt-1 text-sm text-red-600">{errors.name}</p>}
                   </div>
                   
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                      Correo Electrónico
+                      Correo Electrónico *
                     </label>
                     <input
                       type="email"
                       id="email"
                       name="email"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black placeholder-gray-600"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black placeholder-gray-600 ${
+                        errors.email ? 'border-red-500' : 'border-gray-300'
+                      }`}
                       placeholder="tu@email.com"
                     />
+                    {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email}</p>}
                   </div>
                   
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                      Teléfono
+                      Teléfono *
                     </label>
                     <input
                       type="tel"
                       id="phone"
                       name="phone"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black placeholder-gray-600"
+                      value={formData.phone}
+                      onChange={handleInputChange}
+                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black placeholder-gray-600 ${
+                        errors.phone ? 'border-red-500' : 'border-gray-300'
+                      }`}
                       placeholder="+51 999 999 999"
                     />
+                    {errors.phone && <p className="mt-1 text-sm text-red-600">{errors.phone}</p>}
                   </div>
                   
                   <div>
                     <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
-                      Servicio de Interés
+                      Servicio de Interés *
                     </label>
                     <select
                       id="service"
                       name="service"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black"
+                      value={formData.service}
+                      onChange={handleInputChange}
+                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black ${
+                        errors.service ? 'border-red-500' : 'border-gray-300'
+                      }`}
                     >
                       <option value="">Selecciona un servicio</option>
                       <option value="vigilancia-privada">Vigilancia Privada</option>
@@ -82,26 +208,37 @@ export default function Contacto() {
                       <option value="prevencion-perdidas">Prevención de Pérdidas</option>
                       <option value="seguridad-electronica">Seguridad Electrónica</option>
                     </select>
+                    {errors.service && <p className="mt-1 text-sm text-red-600">{errors.service}</p>}
                   </div>
                   
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                      Mensaje
+                      Mensaje *
                     </label>
                     <textarea
                       id="message"
                       name="message"
+                      value={formData.message}
+                      onChange={handleInputChange}
                       rows={4}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black placeholder-gray-600"
+                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black placeholder-gray-600 ${
+                        errors.message ? 'border-red-500' : 'border-gray-300'
+                      }`}
                       placeholder="Cuéntanos sobre tus necesidades de seguridad..."
-                    ></textarea>
+                    />
+                    {errors.message && <p className="mt-1 text-sm text-red-600">{errors.message}</p>}
                   </div>
                   
                   <button
                     type="submit"
-                    className="w-full bg-yellow-400 text-black py-3 px-6 rounded-lg font-bold hover:bg-yellow-300 transition-colors"
+                    disabled={isSubmitting}
+                    className={`w-full py-3 px-6 rounded-lg font-bold transition-colors ${
+                      isSubmitting
+                        ? 'bg-gray-400 text-gray-600 cursor-not-allowed'
+                        : 'bg-yellow-400 text-black hover:bg-yellow-300'
+                    }`}
                   >
-                    Enviar Mensaje
+                    {isSubmitting ? 'Enviando Mensaje...' : 'Enviar Mensaje'}
                   </button>
                 </form>
               </div>
