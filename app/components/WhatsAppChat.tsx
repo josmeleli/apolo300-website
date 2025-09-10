@@ -44,7 +44,7 @@ export default function WhatsAppChat({ isOpen, onClose }: WhatsAppChatProps) {
   if (!isOpen) return null
 
   return (
-    <div className="fixed bottom-24 right-6 z-50 w-80 bg-white rounded-lg shadow-2xl border border-gray-200 overflow-hidden">
+    <div className="fixed bottom-24 right-6 z-[200] w-80 bg-white rounded-lg shadow-2xl border border-gray-200 overflow-hidden">
       {/* Header */}
       <div className="bg-green-500 text-white p-4 flex items-center justify-between">
         <div className="flex items-center space-x-3">

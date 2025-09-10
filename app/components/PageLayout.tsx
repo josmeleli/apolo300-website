@@ -23,7 +23,7 @@ export default function PageLayout({ children, noMainPadding = false }: LayoutPr
       <Footer />
       
       {/* WhatsApp Float Button */}
-      <div className="fixed bottom-6 right-6 z-[90]">
+      <div className="fixed bottom-6 right-6 z-[201]">
         <div className="relative">
           <button
             onClick={() => setIsChatOpen(!isChatOpen)}
