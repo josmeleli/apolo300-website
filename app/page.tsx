@@ -151,6 +151,7 @@ export default function Home() {
                 <option value="seguridad-corporativa">Seguridad Corporativa</option>
                 <option value="seguridad-resguardo">Seguridad de Resguardo</option>
                 <option value="prevencion-perdidas">Prevención de Pérdidas</option>
+                <option value="seguridad-electronica">Seguridad Electrónica</option>
               </select>
 
               <textarea
