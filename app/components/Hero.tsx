@@ -51,7 +51,7 @@ const Hero = () => {
     {
       id: 6,
       title: "SEGURIDAD ELECTRÓNICA",
-      description: "Sistemas avanzados de seguridad electrónica: alarmas, CCTV, control de acceso y monitoreo 24/7. Tecnología de punta para máxima protección.",
+      description: "Monitoreo remoto de su hogar o negocio desde cualquier dispositivo. Cámaras de alta definición, alertas instantáneas y control total desde su smartphone o tablet.",
       image: "/images/servicio-de-seguridad-electrónica.webp",
       buttonText: "INGRESAR",
       route: "/servicios/seguridad-electronica"
