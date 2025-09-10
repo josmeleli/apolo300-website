@@ -5,6 +5,7 @@ export interface ContactFormData {
   name: string;
   email: string;
   phone: string;
+  company?: string; // Campo opcional para empresa
   service: string;
   message: string;
 }
@@ -67,6 +68,7 @@ export const sendContactEmail = async (formData: ContactFormData): Promise<void>
     from_name: formData.name,
     from_email: formData.email,
     phone: formData.phone,
+    company: formData.company || 'Persona Natural',
     service: formData.service,
     message: formData.message,
     to_name: 'APOLO300',

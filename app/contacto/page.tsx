@@ -9,6 +9,7 @@ export default function Contacto() {
     name: '',
     email: '',
     phone: '',
+    company: '',
     service: '',
     message: ''
   });
@@ -75,6 +76,7 @@ export default function Contacto() {
         name: '',
         email: '',
         phone: '',
+        company: '',
         service: '',
         message: ''
       });
@@ -185,6 +187,21 @@ export default function Contacto() {
                       placeholder="+51 999 999 999"
                     />
                     {errors.phone && <p className="mt-1 text-sm text-red-600">{errors.phone}</p>}
+                  </div>
+
+                  <div>
+                    <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
+                      Empresa (Opcional)
+                    </label>
+                    <input
+                      type="text"
+                      id="company"
+                      name="company"
+                      value={formData.company}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black placeholder-gray-600"
+                      placeholder="Nombre de tu empresa"
+                    />
                   </div>
                   
                   <div>
