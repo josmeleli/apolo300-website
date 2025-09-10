@@ -65,7 +65,7 @@ export default function SeguridadElectronica() {
               {/* Image */}
               <div className="relative h-96 lg:h-full rounded-lg overflow-hidden shadow-xl">
                 <img 
-                  src="/images/servicio-de-seguridad-corporativa.webp" 
+                  src="/images/servicio-de-seguridad-electrónica.webp" 
                   alt="Seguridad Electrónica APOLO300"
                   className="w-full h-full object-cover"
                 />

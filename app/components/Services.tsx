@@ -40,7 +40,7 @@ const Services = () => {
     {
       id: 6,
       title: "Seguridad Electrónica",
-      image: "/images/servicio-de-seguridad-corporativa.webp",
+      image: "/images/servicio-de-seguridad-electrónica.webp",
       description: "Sistemas avanzados de alarmas, CCTV, control de acceso y monitoreo 24/7 con tecnología de punta.",
       route: "/servicios/seguridad-electronica"
     }
