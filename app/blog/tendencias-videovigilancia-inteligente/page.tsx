@@ -66,7 +66,7 @@ export default function TendenciasVideovigilancia() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="bg-white border-2 border-blue-200 rounded-lg p-6">
-                <h4 className="font-semibold text-blue-900 mb-3 flex items-center">
+                <h4 className="font-semibold text-white mb-3 flex items-center">
                   <span className="text-2xl mr-3">🧠</span>
                   Análisis Comportamental
                 </h4>
@@ -120,21 +120,21 @@ export default function TendenciasVideovigilancia() {
                   <div className="flex items-start space-x-3">
                     <div className="w-3 h-3 rounded-full bg-blue-600 mt-1.5"></div>
                     <div>
-                      <h4 className="font-medium text-blue-900">Almacenamiento en la Nube</h4>
+                      <h4 className="font-medium text-white">Almacenamiento en la Nube</h4>
                       <p className="text-blue-700 text-sm">Backup automático y acceso remoto seguro</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <div className="w-3 h-3 rounded-full bg-blue-600 mt-1.5"></div>
                     <div>
-                      <h4 className="font-medium text-blue-900">Análisis de Tráfico</h4>
+                      <h4 className="font-medium text-white">Análisis de Tráfico</h4>
                       <p className="text-blue-700 text-sm">Conteo y análisis de flujo de personas y vehículos</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <div className="w-3 h-3 rounded-full bg-blue-600 mt-1.5"></div>
                     <div>
-                      <h4 className="font-medium text-blue-900">Alertas Inteligentes</h4>
+                      <h4 className="font-medium text-white">Alertas Inteligentes</h4>
                       <p className="text-blue-700 text-sm">Notificaciones instantáneas vía móvil y email</p>
                     </div>
                   </div>
@@ -187,7 +187,7 @@ export default function TendenciasVideovigilancia() {
                   <p className="text-green-700 text-sm">Activación automática basada en eventos detectados</p>
                 </div>
                 <div className="bg-white rounded-lg p-4 border-l-4 border-blue-400">
-                  <h4 className="font-medium text-blue-900 mb-2">Iluminación</h4>
+                  <h4 className="font-medium text-white mb-2">Iluminación</h4>
                   <p className="text-blue-700 text-sm">Control automático según detección de movimiento</p>
                 </div>
               </div>
@@ -200,7 +200,7 @@ export default function TendenciasVideovigilancia() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
-                <h4 className="font-semibold text-blue-900 mb-3">🏪 Retail</h4>
+                <h4 className="font-semibold text-white mb-3">🏪 Retail</h4>
                 <ul className="text-blue-700 text-sm space-y-2">
                   <li>• Prevención de hurtos con análisis de comportamiento</li>
                   <li>• Análisis de tráfico de clientes</li>
@@ -277,7 +277,7 @@ export default function TendenciasVideovigilancia() {
               </p>
               <Link 
                 href="/contacto" 
-                className="bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors inline-block"
+                className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-block"
               >
                 Solicitar Demostración
               </Link>

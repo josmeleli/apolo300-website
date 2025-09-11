@@ -8,7 +8,7 @@ export default function SeguridadResguardo() {
       <div className="min-h-screen bg-gray-50">
         <section className="bg-blue-950 text-white py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-yellow-400">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-blue-400">
               SEGURIDAD DE RESGUARDO
             </h1>
             <p className="text-xl md:text-2xl text-blue-200">
@@ -34,13 +34,13 @@ export default function SeguridadResguardo() {
                   Protección de Activos de Alto Valor
                 </h2>
                 <p className="text-gray-600 text-lg mb-6">
-                  <span className="font-semibold text-blue-950">Confíe sus activos más valiosos a los verdaderos expertos en protección.</span> Nuestros servicios especializados de custodia y resguardo representan <span className="font-semibold text-blue-950">el estándar de oro en protección de alto valor</span>, diseñados para salvaguardar sus bienes más preciados con la misma dedicación que un tesoro nacional. Ofrecemos <span className="font-semibold text-yellow-600">transporte blindado de valores, custodia ultra-segura de documentos críticos</span> y resguardo de mercancías de alto valor, todo respaldado por <span className="font-semibold text-blue-950">protocolos de seguridad militares y tecnología de vanguardia</span> que garantiza que sus activos lleguen a su destino en perfectas condiciones, sin excepción.
+                  <span className="font-semibold text-blue-950">Confíe sus activos más valiosos a los verdaderos expertos en protección.</span> Nuestros servicios especializados de custodia y resguardo representan <span className="font-semibold text-blue-950">el estándar de oro en protección de alto valor</span>, diseñados para salvaguardar sus bienes más preciados con la misma dedicación que un tesoro nacional. Ofrecemos <span className="font-semibold text-blue-600">transporte blindado de valores, custodia ultra-segura de documentos críticos</span> y resguardo de mercancías de alto valor, todo respaldado por <span className="font-semibold text-blue-950">protocolos de seguridad militares y tecnología de vanguardia</span> que garantiza que sus activos lleguen a su destino en perfectas condiciones, sin excepción.
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link 
                     href="/contacto"
-                    className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-bold hover:bg-yellow-300 transition-colors text-center"
+                    className="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors text-center"
                   >
                     CONTACTAR
                   </Link>
@@ -52,7 +52,7 @@ export default function SeguridadResguardo() {
 
             {/* Call to Action */}
             <div className="bg-blue-950 text-white rounded-lg p-8 text-center">
-              <h2 className="text-3xl font-bold mb-4 text-yellow-400">
+              <h2 className="text-3xl font-bold mb-4 text-blue-400">
                 Protege tus Activos más Valiosos
               </h2>
               <p className="text-xl mb-6 text-blue-200">
@@ -61,7 +61,7 @@ export default function SeguridadResguardo() {
               </p>
               <Link 
                 href="/contacto"
-                className="inline-block bg-yellow-400 text-black px-8 py-4 rounded-lg font-bold hover:bg-yellow-300 transition-colors"
+                className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-blue-700 transition-colors"
               >
                 SOLICITAR RESGUARDO
               </Link>

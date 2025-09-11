@@ -7,7 +7,7 @@ export default function Politicas() {
         {/* Hero Section */}
         <section className="bg-blue-950 text-white py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-yellow-400">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-blue-400">
               POLÍTICAS
             </h1>
             <p className="text-xl md:text-2xl text-blue-200">
@@ -29,19 +29,19 @@ export default function Politicas() {
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start">
-                    <span className="text-yellow-500 mr-3 mt-1">✓</span>
+                    <span className="text-blue-500 mr-3 mt-1">✓</span>
                     <span className="text-gray-600">Personal altamente capacitado y certificado</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-yellow-500 mr-3 mt-1">✓</span>
+                    <span className="text-blue-500 mr-3 mt-1">✓</span>
                     <span className="text-gray-600">Mejora continua de nuestros procesos</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-yellow-500 mr-3 mt-1">✓</span>
+                    <span className="text-blue-500 mr-3 mt-1">✓</span>
                     <span className="text-gray-600">Cumplimiento de normativas y estándares internacionales</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-yellow-500 mr-3 mt-1">✓</span>
+                    <span className="text-blue-500 mr-3 mt-1">✓</span>
                     <span className="text-gray-600">Innovación tecnológica en nuestros servicios</span>
                   </li>
                 </ul>
@@ -86,15 +86,15 @@ export default function Politicas() {
                     <h3 className="text-lg font-semibold text-blue-950 mb-3">Protocolos de Acción</h3>
                     <ul className="space-y-2">
                       <li className="flex items-center">
-                        <span className="text-yellow-500 mr-2">•</span>
+                        <span className="text-blue-500 mr-2">•</span>
                         <span className="text-gray-600">Evaluación de riesgos</span>
                       </li>
                       <li className="flex items-center">
-                        <span className="text-yellow-500 mr-2">•</span>
+                        <span className="text-blue-500 mr-2">•</span>
                         <span className="text-gray-600">Respuesta inmediata</span>
                       </li>
                       <li className="flex items-center">
-                        <span className="text-yellow-500 mr-2">•</span>
+                        <span className="text-blue-500 mr-2">•</span>
                         <span className="text-gray-600">Comunicación efectiva</span>
                       </li>
                     </ul>
@@ -103,15 +103,15 @@ export default function Politicas() {
                     <h3 className="text-lg font-semibold text-blue-950 mb-3">Certificaciones</h3>
                     <ul className="space-y-2">
                       <li className="flex items-center">
-                        <span className="text-yellow-500 mr-2">•</span>
+                        <span className="text-blue-500 mr-2">•</span>
                         <span className="text-gray-600">ISO 9001</span>
                       </li>
                       <li className="flex items-center">
-                        <span className="text-yellow-500 mr-2">•</span>
+                        <span className="text-blue-500 mr-2">•</span>
                         <span className="text-gray-600">Certificación SUCAMEC</span>
                       </li>
                       <li className="flex items-center">
-                        <span className="text-yellow-500 mr-2">•</span>
+                        <span className="text-blue-500 mr-2">•</span>
                         <span className="text-gray-600">Estándares internacionales</span>
                       </li>
                     </ul>

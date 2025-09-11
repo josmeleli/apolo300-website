@@ -91,27 +91,27 @@ export default function ImportanciaCapacitacion() {
             </p>
 
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
-              <h3 className="text-lg font-semibold text-blue-900 mb-4">Módulos de Capacitación</h3>
+              <h3 className="text-lg font-semibold text-white mb-4">Módulos de Capacitación</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-3">
                   <div className="flex items-start space-x-3">
                     <div className="w-2 h-2 rounded-full bg-blue-600 mt-2"></div>
                     <div>
-                      <h4 className="font-medium text-blue-900">Fundamentos de Seguridad</h4>
+                      <h4 className="font-medium text-white">Fundamentos de Seguridad</h4>
                       <p className="text-blue-700 text-sm">Principios básicos y marco legal</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <div className="w-2 h-2 rounded-full bg-blue-600 mt-2"></div>
                     <div>
-                      <h4 className="font-medium text-blue-900">Primeros Auxilios</h4>
+                      <h4 className="font-medium text-white">Primeros Auxilios</h4>
                       <p className="text-blue-700 text-sm">Atención médica de emergencia</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <div className="w-2 h-2 rounded-full bg-blue-600 mt-2"></div>
                     <div>
-                      <h4 className="font-medium text-blue-900">Control de Acceso</h4>
+                      <h4 className="font-medium text-white">Control de Acceso</h4>
                       <p className="text-blue-700 text-sm">Sistemas y protocolos de entrada</p>
                     </div>
                   </div>
@@ -120,21 +120,21 @@ export default function ImportanciaCapacitacion() {
                   <div className="flex items-start space-x-3">
                     <div className="w-2 h-2 rounded-full bg-blue-600 mt-2"></div>
                     <div>
-                      <h4 className="font-medium text-blue-900">Tecnología de Seguridad</h4>
+                      <h4 className="font-medium text-white">Tecnología de Seguridad</h4>
                       <p className="text-blue-700 text-sm">CCTV, alarmas y sistemas modernos</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <div className="w-2 h-2 rounded-full bg-blue-600 mt-2"></div>
                     <div>
-                      <h4 className="font-medium text-blue-900">Atención al Cliente</h4>
+                      <h4 className="font-medium text-white">Atención al Cliente</h4>
                       <p className="text-blue-700 text-sm">Trato profesional y comunicación</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <div className="w-2 h-2 rounded-full bg-blue-600 mt-2"></div>
                     <div>
-                      <h4 className="font-medium text-blue-900">Gestión de Crisis</h4>
+                      <h4 className="font-medium text-white">Gestión de Crisis</h4>
                       <p className="text-blue-700 text-sm">Manejo de situaciones de emergencia</p>
                     </div>
                   </div>
@@ -187,9 +187,9 @@ export default function ImportanciaCapacitacion() {
               Implementamos un sistema de evaluación continua que nos permite identificar áreas de mejora y adaptar nuestros programas de capacitación a las necesidades cambiantes del sector.
             </p>
 
-            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 mb-8">
-              <h3 className="text-lg font-semibold text-yellow-800 mb-3">💪 Nuestro Compromiso</h3>
-              <p className="text-yellow-700">
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
+              <h3 className="text-lg font-semibold text-blue-800 mb-3">💪 Nuestro Compromiso</h3>
+              <p className="text-blue-700">
                 En APOLO300 invertimos más del 15% de nuestro presupuesto anual en capacitación y desarrollo profesional, porque creemos que un equipo bien preparado es la mejor garantía de un servicio excepcional.
               </p>
             </div>
@@ -225,7 +225,7 @@ export default function ImportanciaCapacitacion() {
               </p>
               <Link 
                 href="/unete-a-nosotros" 
-                className="bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors inline-block"
+                className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-block"
               >
                 Únete a Nuestro Equipo
               </Link>

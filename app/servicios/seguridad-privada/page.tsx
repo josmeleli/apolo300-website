@@ -9,7 +9,7 @@ export default function SeguridadPrivada() {
         {/* Hero Section */}
         <section className="bg-blue-950 text-white py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-yellow-400">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-blue-400">
               SEGURIDAD PRIVADA
             </h1>
             <p className="text-xl md:text-2xl text-blue-200">
@@ -38,13 +38,13 @@ export default function SeguridadPrivada() {
                   Protección Integral para tu Propiedad
                 </h2>
                 <p className="text-gray-600 text-lg mb-6">
-                  <span className="font-semibold text-blue-950">Protege lo que más amas con la tranquilidad que mereces.</span> Nuestros servicios de seguridad privada representan la <span className="font-semibold text-blue-950">máxima expresión en protección residencial y empresarial</span>, diseñados exclusivamente para clientes que no aceptan compromisos en su seguridad. Con <span className="font-semibold text-yellow-600">personal de élite altamente especializado</span> y tecnología de vanguardia de última generación, creamos un <span className="font-semibold text-blue-950">escudo invisible e impenetrable</span> que protege sus bienes más valiosos y seres queridos las 24 horas del día, los 365 días del año. <span className="font-semibold text-blue-950">Su paz mental es nuestra misión.</span>
+                  <span className="font-semibold text-blue-950">Protege lo que más amas con la tranquilidad que mereces.</span> Nuestros servicios de seguridad privada representan la <span className="font-semibold text-blue-950">máxima expresión en protección residencial y empresarial</span>, diseñados exclusivamente para clientes que no aceptan compromisos en su seguridad. Con <span className="font-semibold text-blue-600">personal de élite altamente especializado</span> y tecnología de vanguardia de última generación, creamos un <span className="font-semibold text-blue-950">escudo invisible e impenetrable</span> que protege sus bienes más valiosos y seres queridos las 24 horas del día, los 365 días del año. <span className="font-semibold text-blue-950">Su paz mental es nuestra misión.</span>
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link 
                     href="/contacto"
-                    className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-bold hover:bg-yellow-300 transition-colors text-center"
+                    className="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors text-center"
                   >
                     CONTACTAR
                   </Link>
@@ -56,7 +56,7 @@ export default function SeguridadPrivada() {
 
             {/* Call to Action */}
             <div className="bg-blue-950 text-white rounded-lg p-8 text-center">
-              <h2 className="text-3xl font-bold mb-4 text-yellow-400">
+              <h2 className="text-3xl font-bold mb-4 text-blue-400">
                 Protege lo que más Valoras
               </h2>
               <p className="text-xl mb-6 text-blue-200">
@@ -65,7 +65,7 @@ export default function SeguridadPrivada() {
               </p>
               <Link 
                 href="/contacto"
-                className="inline-block bg-yellow-400 text-black px-8 py-4 rounded-lg font-bold hover:bg-yellow-300 transition-colors"
+                className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-blue-700 transition-colors"
               >
                 EVALUAR MI PROPIEDAD
               </Link>

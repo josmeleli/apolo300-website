@@ -97,7 +97,7 @@ export default function UneteANosotros() {
         {/* Hero Section */}
         <section className="bg-blue-950 text-white py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-yellow-400">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-blue-400">
               ÚNETE A NOSOTROS
             </h1>
             <p className="text-xl md:text-2xl text-blue-200">
@@ -149,7 +149,7 @@ export default function UneteANosotros() {
                       name="name"
                       value={formData.name}
                       onChange={handleInputChange}
-                      className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black placeholder-gray-600 ${
+                      className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-600 ${
                         errors.name ? 'border-red-500' : 'border-gray-300'
                       }`}
                       placeholder="Tu nombre completo"
@@ -166,7 +166,7 @@ export default function UneteANosotros() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleInputChange}
-                      className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black placeholder-gray-600 ${
+                      className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-600 ${
                         errors.phone ? 'border-red-500' : 'border-gray-300'
                       }`}
                       placeholder="+51 999 999 999"
@@ -184,7 +184,7 @@ export default function UneteANosotros() {
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black placeholder-gray-600 ${
+                    className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-600 ${
                       errors.email ? 'border-red-500' : 'border-gray-300'
                     }`}
                     placeholder="tu.email@ejemplo.com"
@@ -200,7 +200,7 @@ export default function UneteANosotros() {
                     name="position"
                     value={formData.position}
                     onChange={handleInputChange}
-                    className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black ${
+                    className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white ${
                       errors.position ? 'border-red-500' : 'border-gray-300'
                     }`}
                   >
@@ -224,7 +224,7 @@ export default function UneteANosotros() {
                     name="experience"
                     value={formData.experience}
                     onChange={handleInputChange}
-                    className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black ${
+                    className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white ${
                       errors.experience ? 'border-red-500' : 'border-gray-300'
                     }`}
                   >
@@ -247,7 +247,7 @@ export default function UneteANosotros() {
                     value={formData.message}
                     onChange={handleInputChange}
                     rows={4}
-                    className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black placeholder-gray-600 ${
+                    className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-600 ${
                       errors.message ? 'border-red-500' : 'border-gray-300'
                     }`}
                     placeholder="Cuéntanos sobre tu motivación, disponibilidad horaria, y qué puedes aportar a nuestro equipo..."
@@ -261,7 +261,7 @@ export default function UneteANosotros() {
                   className={`w-full py-3 px-6 rounded-lg font-bold transition-colors ${
                     isSubmitting
                       ? 'bg-gray-400 text-gray-600 cursor-not-allowed'
-                      : 'bg-yellow-400 text-black hover:bg-yellow-300'
+                      : 'bg-blue-600 text-white hover:bg-blue-700'
                   }`}
                 >
                   {isSubmitting ? 'Enviando Solicitud...' : 'Enviar Solicitud'}

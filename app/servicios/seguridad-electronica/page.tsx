@@ -9,7 +9,7 @@ export default function SeguridadElectronica() {
         {/* Hero Section */}
         <section className="bg-blue-950 text-white py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-yellow-400">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-blue-400">
               SEGURIDAD ELECTRÓNICA
             </h1>
             <p className="text-xl md:text-2xl text-blue-200">
@@ -38,13 +38,13 @@ export default function SeguridadElectronica() {
                   Tecnología Inteligente a su Alcance
                 </h2>
                 <p className="text-gray-600 text-lg mb-6">
-                  <span className="font-semibold text-blue-950">Supervise y controle su propiedad desde cualquier lugar del mundo.</span> Nuestros sistemas de seguridad electrónica representan la <span className="font-semibold text-blue-950">evolución más avanzada en monitoreo remoto</span>, diseñados para propietarios inteligentes que valoran la tranquilidad y el control total. Con <span className="font-semibold text-yellow-600">cámaras de alta definición, alertas instantáneas y acceso móvil 24/7</span>, transformamos su smartphone en el centro de comando más poderoso, permitiéndole <span className="font-semibold text-blue-950">vigilar cada rincón de su propiedad en tiempo real</span>, sin importar si está en la oficina, de viaje o en casa. <span className="font-semibold text-blue-950">Su seguridad, siempre a un toque de distancia.</span>
+                  <span className="font-semibold text-blue-950">Supervise y controle su propiedad desde cualquier lugar del mundo.</span> Nuestros sistemas de seguridad electrónica representan la <span className="font-semibold text-blue-950">evolución más avanzada en monitoreo remoto</span>, diseñados para propietarios inteligentes que valoran la tranquilidad y el control total. Con <span className="font-semibold text-blue-600">cámaras de alta definición, alertas instantáneas y acceso móvil 24/7</span>, transformamos su smartphone en el centro de comando más poderoso, permitiéndole <span className="font-semibold text-blue-950">vigilar cada rincón de su propiedad en tiempo real</span>, sin importar si está en la oficina, de viaje o en casa. <span className="font-semibold text-blue-950">Su seguridad, siempre a un toque de distancia.</span>
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link 
                     href="/contacto"
-                    className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-bold hover:bg-yellow-300 transition-colors text-center"
+                    className="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors text-center"
                   >
                     CONTACTAR
                   </Link>
@@ -54,7 +54,7 @@ export default function SeguridadElectronica() {
 
             {/* Call to Action */}
             <div className="bg-blue-950 text-white rounded-lg p-8 text-center">
-              <h2 className="text-3xl font-bold mb-4 text-yellow-400">
+              <h2 className="text-3xl font-bold mb-4 text-blue-400">
                 Moderniza tu Seguridad Hoy
               </h2>
               <p className="text-xl mb-6 text-blue-200">
@@ -63,7 +63,7 @@ export default function SeguridadElectronica() {
               </p>
               <Link 
                 href="/contacto"
-                className="inline-block bg-yellow-400 text-black px-8 py-4 rounded-lg font-bold hover:bg-yellow-300 transition-colors"
+                className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-blue-700 transition-colors"
               >
                 DEMOSTRACIÓN GRATUITA
               </Link>

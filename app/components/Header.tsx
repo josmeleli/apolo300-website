@@ -103,7 +103,7 @@ const Header = () => {
                 <div key={item.name} className="relative">
                   <Link
                     href={item.href}
-                    className="text-white hover:text-yellow-400 transition-colors font-bold text-sm xl:text-base px-4 xl:px-6 py-3 border-b-2 border-transparent hover:border-red-300 whitespace-nowrap flex items-center"
+                    className="text-white hover:text-blue-400 transition-colors font-bold text-sm xl:text-base px-4 xl:px-6 py-3 border-b-2 border-transparent hover:border-red-300 whitespace-nowrap flex items-center"
                   >
                     {item.name}
                     {item.hasDropdown && <span className="ml-1">▼</span>}
@@ -181,7 +181,7 @@ const Header = () => {
                     setIsMenuOpen(false);
                     setActiveLink(item.name);
                   }}
-                  className={`text-white hover:text-yellow-400 transition-colors font-bold text-sm xl:text-base px-4 xl:px-6 py-3 border-b-2 whitespace-nowrap flex items-center ${
+                  className={`text-white hover:text-blue-400 transition-colors font-bold text-sm xl:text-base px-4 xl:px-6 py-3 border-b-2 whitespace-nowrap flex items-center ${
                     activeLink === item.name 
                       ? 'border-red-500' 
                       : 'border-transparent hover:border-red-300'
@@ -230,7 +230,7 @@ const Header = () => {
                           setActiveLink(item.name);
                         }
                       }}
-                      className={`text-white hover:text-yellow-400 block px-3 py-2 sm:py-3 text-base sm:text-lg font-bold border-l-4 rounded-r ${
+                      className={`text-white hover:text-blue-400 block px-3 py-2 sm:py-3 text-base sm:text-lg font-bold border-l-4 rounded-r ${
                         activeLink === item.name 
                           ? 'border-red-600 bg-red-800 font-semibold' 
                           : 'border-transparent hover:bg-blue-800'
@@ -254,7 +254,7 @@ const Header = () => {
                             className={`block px-3 py-2 text-sm border-l-2 transition-colors ${
                               pathname === service.href
                                 ? 'text-white border-red-600 bg-red-800 font-semibold'
-                                : 'text-blue-200 border-blue-700 hover:text-yellow-400 hover:border-yellow-400'
+                                : 'text-blue-200 border-blue-700 hover:text-blue-400 hover:border-blue-400'
                             }`}
                           >
                             {service.name}

@@ -78,7 +78,7 @@ const Services = () => {
                 </p>
                 <Link 
                   href={service.route}
-                  className="mt-4 text-yellow-500 font-semibold hover:text-yellow-600 transition-colors text-left inline-block"
+                  className="mt-4 text-blue-600 font-semibold hover:text-blue-700 transition-colors text-left inline-block"
                 >
                   Leer más →
                 </Link>
@@ -110,7 +110,7 @@ const Services = () => {
                 </p>
                 <Link 
                   href={service.route}
-                  className="mt-4 text-yellow-500 font-semibold hover:text-yellow-600 transition-colors text-left inline-block"
+                  className="mt-4 text-blue-600 font-semibold hover:text-blue-700 transition-colors text-left inline-block"
                 >
                   Leer más →
                 </Link>

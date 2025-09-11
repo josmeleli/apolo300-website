@@ -111,7 +111,7 @@ const Hero = () => {
             <div 
               className="text-center text-white max-w-4xl px-6 py-8 rounded-lg"
             >
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 text-yellow-400 drop-shadow-2xl">
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 text-blue-400 drop-shadow-2xl">
                 {slide.title}
               </h1>
               <p className="text-lg md:text-xl mb-8 leading-relaxed drop-shadow-lg">
@@ -119,7 +119,7 @@ const Hero = () => {
               </p>
               <Link 
                 href={slide.route}
-                className="bg-yellow-400 text-black px-8 py-3 rounded font-bold text-lg hover:bg-yellow-300 transition-colors drop-shadow-lg inline-block"
+                className="bg-blue-600 text-white px-8 py-3 rounded font-bold text-lg hover:bg-blue-700 transition-colors drop-shadow-lg inline-block"
               >
                 {slide.buttonText}
               </Link>
@@ -151,7 +151,7 @@ const Hero = () => {
             key={index}
             onClick={() => setCurrentSlide(index)}
             className={`w-3 h-3 rounded-full transition-all ${
-              index === currentSlide ? 'bg-yellow-400' : 'bg-white bg-opacity-50'
+              index === currentSlide ? 'bg-blue-400' : 'bg-white bg-opacity-50'
             }`}
           />
         ))}

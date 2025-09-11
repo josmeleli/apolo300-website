@@ -318,7 +318,7 @@ export default function Home() {
                   className={`px-10 py-4 rounded-lg font-bold text-lg transition-colors ${
                     isSubmitting
                       ? 'bg-gray-400 text-gray-600 cursor-not-allowed'
-                      : 'bg-yellow-400 text-black hover:bg-yellow-300'
+                      : 'bg-blue-600 text-white hover:bg-blue-700'
                   }`}
                 >
                   {isSubmitting ? 'ENVIANDO...' : 'ENVIAR SOLICITUD'}

@@ -8,7 +8,7 @@ export default function SeguridadCorporativa() {
       <div className="min-h-screen bg-gray-50">
         <section className="bg-blue-950 text-white py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-yellow-400">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-blue-400">
               SEGURIDAD CORPORATIVA
             </h1>
             <p className="text-xl md:text-2xl text-blue-200">
@@ -34,13 +34,13 @@ export default function SeguridadCorporativa() {
                   Soluciones Empresariales Avanzadas
                 </h2>
                 <p className="text-gray-600 text-lg mb-6">
-                  <span className="font-semibold text-blue-950">Eleve su empresa al siguiente nivel con seguridad corporativa de clase mundial.</span> Nuestros servicios integrales de seguridad empresarial están <span className="font-semibold text-blue-950">diseñados exclusivamente para líderes visionarios</span> que entienden que la protección no es un gasto, sino la inversión más inteligente para el futuro de su organización. Incluimos <span className="font-semibold text-yellow-600">protección ejecutiva VIP, seguridad perimetral avanzada, gestión proactiva de riesgos</span> y auditorías especializadas de seguridad que <span className="font-semibold text-blue-950">blindan su patrimonio empresarial y garantizan la continuidad de sus operaciones</span>, sin importar el tamaño o complejidad de su empresa.
+                  <span className="font-semibold text-blue-950">Eleve su empresa al siguiente nivel con seguridad corporativa de clase mundial.</span> Nuestros servicios integrales de seguridad empresarial están <span className="font-semibold text-blue-950">diseñados exclusivamente para líderes visionarios</span> que entienden que la protección no es un gasto, sino la inversión más inteligente para el futuro de su organización. Incluimos <span className="font-semibold text-blue-600">protección ejecutiva VIP, seguridad perimetral avanzada, gestión proactiva de riesgos</span> y auditorías especializadas de seguridad que <span className="font-semibold text-blue-950">blindan su patrimonio empresarial y garantizan la continuidad de sus operaciones</span>, sin importar el tamaño o complejidad de su empresa.
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link 
                     href="/contacto"
-                    className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-bold hover:bg-yellow-300 transition-colors text-center"
+                    className="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors text-center"
                   >
                     CONTACTAR
                   </Link>
@@ -51,7 +51,7 @@ export default function SeguridadCorporativa() {
             
             {/* Call to Action */}
             <div className="bg-blue-950 text-white rounded-lg p-8 text-center">
-              <h2 className="text-3xl font-bold mb-4 text-yellow-400">
+              <h2 className="text-3xl font-bold mb-4 text-blue-400">
                 Fortalece la Seguridad de tu Empresa
               </h2>
               <p className="text-xl mb-6 text-blue-200">
@@ -60,7 +60,7 @@ export default function SeguridadCorporativa() {
               </p>
               <Link 
                 href="/contacto"
-                className="inline-block bg-yellow-400 text-black px-8 py-4 rounded-lg font-bold hover:bg-yellow-300 transition-colors"
+                className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-blue-700 transition-colors"
               >
                 CONSULTORÍA GRATUITA
               </Link>

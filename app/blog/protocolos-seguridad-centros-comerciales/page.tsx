@@ -132,7 +132,7 @@ export default function ProtocolosSeguridad() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
-                <h4 className="font-semibold text-blue-900 mb-3">Horario Comercial</h4>
+                <h4 className="font-semibold text-white mb-3">Horario Comercial</h4>
                 <ul className="text-blue-700 text-sm space-y-1">
                   <li>• Vigilancia en todas las entradas principales</li>
                   <li>• Monitoreo de áreas comunes</li>
@@ -157,7 +157,7 @@ export default function ProtocolosSeguridad() {
             </p>
 
             <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-lg p-6 mb-8">
-              <h3 className="text-lg font-semibold text-blue-900 mb-4">Herramientas Tecnológicas</h3>
+              <h3 className="text-lg font-semibold text-white mb-4">Herramientas Tecnológicas</h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="text-center">
                   <div className="text-2xl mb-2">📹</div>
@@ -205,7 +205,7 @@ export default function ProtocolosSeguridad() {
               </p>
               <Link 
                 href="/contacto" 
-                className="bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors inline-block"
+                className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-block"
               >
                 Solicitar Evaluación Gratuita
               </Link>

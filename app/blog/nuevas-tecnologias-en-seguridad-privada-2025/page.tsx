@@ -57,7 +57,7 @@ export default function NuevasTecnologias() {
           {/* Contenido del artículo */}
           <div className="prose prose-lg max-w-none">
             <div className="bg-blue-50 border-l-4 border-blue-600 p-6 mb-8">
-              <p className="text-blue-900 font-medium">
+              <p className="text-white font-medium">
                 En APOLO300, nos mantenemos a la vanguardia de la innovación tecnológica para ofrecer servicios de seguridad privada de última generación que garantizan la máxima protección para nuestros clientes.
               </p>
             </div>
@@ -107,9 +107,9 @@ export default function NuevasTecnologias() {
               Nuestros equipos utilizan comunicaciones cifradas de grado militar y sensores IoT distribuidos que crean una red de seguridad inteligente capaz de detectar y responder a amenazas en tiempo real.
             </p>
 
-            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 mb-8">
-              <h3 className="text-lg font-semibold text-yellow-800 mb-3">💡 Innovación Constante</h3>
-              <p className="text-yellow-700">
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
+              <h3 className="text-lg font-semibold text-blue-800 mb-3">💡 Innovación Constante</h3>
+              <p className="text-blue-700">
                 En APOLO300 invertimos constantemente en I+D para mantenernos a la vanguardia tecnológica y ofrecer a nuestros clientes las soluciones más avanzadas del mercado.
               </p>
             </div>
@@ -126,7 +126,7 @@ export default function NuevasTecnologias() {
               </p>
               <Link 
                 href="/contacto" 
-                className="bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors inline-block"
+                className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-block"
               >
                 Solicitar Consulta Gratuita
               </Link>
