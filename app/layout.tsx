@@ -37,8 +37,35 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'SecurityService',
+    name: 'APOLO300',
+    description: 'Empresa líder en servicios de seguridad privada, corporativa, eventos, resguardo, prevención de pérdidas y seguridad electrónica.',
+    url: 'https://apolo300.vercel.app',
+    telephone: '+52-xxx-xxx-xxxx',
+    address: {
+      '@type': 'PostalAddress',
+      addressCountry: 'MX',
+    },
+    serviceType: [
+      'Seguridad Privada',
+      'Seguridad Corporativa',
+      'Seguridad para Eventos',
+      'Seguridad de Resguardo',
+      'Prevención de Pérdidas',
+      'Seguridad Electrónica'
+    ]
+  };
+
   return (
-    <html lang="en">
+    <html lang="es">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
